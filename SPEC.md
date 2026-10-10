@@ -412,3 +412,5 @@ Original track requirement: reasoning grounded in real outcomes. Without permiss
 ### Visible student context
 
 A Student being reviewed card sits above the results on initial load, extraction and comparison views. It shows name, unweighted GPA, readable rigor level, major, activities, full draft essay and confirmed matching tags. Editing the profile updates the card immediately while invalidating stale results. Synthetic comparison students use independently shuffled first-name and surname lists with a fixed random seed; display labels never affect matching, quotations or outcome classifications.
+
+UI terminology: distinguish a first-year college applicant from a current college student. Label GPA and coursework as high-school preparation, use descriptive coursework options without numeric codes, and explain advanced-course examples. Do not invent transcript courses or school opportunities. Policy values remain 0/1/2 internally.
