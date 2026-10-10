@@ -1,28 +1,34 @@
-# CaseList remaining work
+# CaseList — work tracker
 
-Use SPEC.md v1.5 and docs/SPEC_TRACEABILITY.md as the acceptance references. This list records work, not implied approval to publish.
+Owner-facing checkpoint in VS Code. Keep this current when work starts, finishes or becomes blocked. Record outcomes and remaining actions, not a transcript of tool calls. Link detailed evidence instead of copying it here.
 
-## Before the 4:30 PM ET submission deadline
+## In progress
 
-- [ ] Rehearse the simplified workflow: Build college shortlist → confirm experiences → inspect results. Verify the one-click GPA/coursework update and source-edit re-confirmation in the browser.
-- [ ] Refresh the video to show the latest single-profile interface and button labels. The existing local video predates this last simplification.
-- [ ] Publish the demo to Loom and make the video playable for judges. Check the link without owner credentials.
-- [ ] Put the playable video URL into the Devpost draft and reconcile its story with the actual synthetic-data scope and sponsor behavior.
-- [ ] Arrange judge access to the private GitHub repository; judge GitHub usernames are still needed. Keep the repository private as requested.
-- [ ] Review all eight submission fields and both links against SPEC.md. Obtain the user's final submission authorization, then submit and verify persistence.
+- None. The latest completed action was organizing these project reference files. Remaining tasks below have not been completed or silently started.
 
-## Review and validation
+## Remaining before submission — October 10, 4:30 PM ET
 
-- [ ] Review PRISM's separate fair_lending/requires_review analysis with the sponsor; retain the flag until resolved.
-- [ ] Verify account-level one-workspace/team and project-naming requirements; trace agent_name=caselist has been verified.
-- [ ] Test usability with someone unfamiliar with the app.
-- [ ] For production, obtain a permissioned historical applicant/outcome dataset and evaluate recommendation accuracy. Synthetic fixtures do not validate predictions.
+- [ ] Rehearse the simplified flow and verify one-click academic updates plus renewed review after essay/activity edits.
+- [ ] Refresh the demo video for the latest single-profile interface.
+- [ ] Publish the Loom demo and verify judge playback without owner credentials.
+- [ ] Update the Devpost draft with the video link and current product claims.
+- [ ] Arrange judge access to the private repository — needs judge GitHub usernames from the owner/organizers.
+- [ ] Check all required submission fields and both links; obtain final authorization, submit and verify.
 
-## Completed
+## Remaining validation
 
-- [x] SPEC.md v1.5 identified; requirement evidence matrix saved.
-- [x] 16 automated tests passed, including bounded malformed-output repair.
-- [x] Fresh live spec 1.5 Council/KB/Evaluator checks passed; PRISM persisted spec/build identity.
-- [x] Input-injection and deliberately wrong-output controls exercised.
-- [x] Distinct synthetic profiles, randomized name pairings and separately sourced college program references.
-- [x] Single editable profile; one main build action; demo and technical controls collapsed.
+- [ ] Resolve or explain PRISM's separate fair_lending/requires_review flag with the sponsor.
+- [ ] Verify workspace/team and project-naming requirements.
+- [ ] Check usability with an unfamiliar user.
+- [ ] Before production: obtain permissioned historical outcomes and validate recommendation accuracy.
+
+## Completed checkpoints
+
+- [x] Spec v1.5 and requirement traceability audit recorded.
+- [x] 16 automated tests passed; fresh live Council/KB/Evaluator run passed, with spec/build identity read back from PRISM.
+- [x] Injection and deliberately incorrect output controls tested.
+- [x] Distinct synthetic profiles, randomized names and official college program references added.
+- [x] Interface simplified to one editable profile and one primary build action.
+- [x] Concise owner reference and explicit work tracker added to VS Code.
+
+Evidence and limitations: [docs/SPEC_TRACEABILITY.md](docs/SPEC_TRACEABILITY.md).
