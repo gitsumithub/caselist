@@ -2,7 +2,7 @@
 
 CaseList generates a provisional reach / target / likely college list from a student’s grades, activities and draft essay, supported by inspectable past applicant records. A counselor can examine conflicting outcomes, correct a profile fact and regenerate the list.
 
-Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.4. On October 10 the user explicitly authorized adding LLM Council through Nicrron and completing the live app and demo. Version 1.2 remains preserved in Git history. The live Council journey and sponsor control checks have passed on recorded synthetic runs; see docs/DELIVERY_RECORD.md. Public video and judge access remain submission requirements.
+Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.5. On October 10 the user explicitly authorized adding LLM Council through Nicrron and completing the live app and demo. Version 1.2 remains preserved in Git history. The live Council journey and sponsor control checks have passed on recorded synthetic runs; see docs/DELIVERY_RECORD.md. Public video and judge access remain submission requirements.
 
 All student histories and outcomes in this prototype are synthetic, as explicitly authorized by the user on October 10. The prototype demonstrates traceable behavior against those records; it does not validate admissions predictions.
 
@@ -127,9 +127,9 @@ Use one usable Python standard-library HTTP server with a plain HTML interface a
 
 | Surface | Required content and actions |
 | --- | --- |
-| Input | Profile and essay fields, synthetic sample button, Build college list |
+| Input | One editable profile and essay; Build college shortlist; example reset under demo tools |
 | Profile review | Editable GPA, scale, rigor, major and supported tags; exact excerpts; fixed context; Continue |
-| List | Six college cards grouped by provisional category plus Needs review; counts and short reasons |
+| List | Six college cards with explicit provisional category or Needs review; counts and short reasons |
 | Evidence | Source records and IDs, academic differences, activity/essay excerpts, recorded outcomes, KB-backed reference |
 | Review actions | Edit profile, Update list and a short change summary |
 | List check | Explicit message when evidence cannot support likely options; never force categories |
@@ -231,7 +231,7 @@ If Nicrron fails before extraction, preserve input and show retry. If the input 
 
 ## Sponsor integration and technical design
 
-Default stack: Python, Python standard-library HTTP server with a plain HTML interface, OpenAI-compatible client, Pydantic, local JSON fixtures and pytest for core checks, plus sponsor-verified Prism interfaces. The event recommends prismtrace-sdk>=0.5.1; pin the version that passes the smoke test. Use explicit submit buttons, session state, input hash, profile revision and run ID. No custom database or vector infrastructure is required; Prism's Knowledge Base is mandatory.
+Default stack: Python, Python standard-library HTTP server with a plain HTML interface, OpenAI-compatible HTTP requests, local JSON fixtures and unittest for core checks, plus sponsor-verified Prism interfaces. The event recommends prismtrace-sdk>=0.5.1; pin the version that passes the smoke test. Use explicit submit buttons, session state, input hash, profile revision and run ID. No custom database or vector infrastructure is required; Prism's Knowledge Base is mandatory.
 
 The sponsor guide specifies Nicrron's OpenAI-compatible endpoint, https://api.nicrron.ai/v1. Use NICRRON_API_KEY and an accessible model verified in the account; do not treat illustrative model IDs in docs as proof of availability. The live journey uses one extraction call, two independent Council opinions, two anonymous reviews and one chairman call; extraction/chairman may each have one schema repair. Test structured-output support and record the actual model. The guide offers COLUMBIA26 for $250 credit plus the standard $10 signup credit, shared across API/Builder/Code. Existing-account balances must be checked rather than assumed. Arena is optional.
 
@@ -397,7 +397,7 @@ PRISM input evaluation runs before inference and fails closed. The default injec
 
 The attached Evaluator checks the compact classified output: all six IDs, category/count consistency, sparse-data abstention, waitlists and canonical citation references. The full essay prose is source-validated locally and reviewed by the Council; it is not included in the bounded classified-output evaluator payload. Shared quotation references prevent PRISM context truncation. The evaluator establishes fixture consistency only, never real admissions validity.
 
-Verified baseline: Reach, Target, Needs review, Likely, Needs review, Needs review. Verified rigor-2 correction: Harbor becomes Likely. Positive classified output PASS 95; wrong four-case Likely output FAIL 15; injected instructions blocked before Nicrron. Eleven tests cover deterministic policy and key failure controls. Each run has session/revision/input hash and model-stage trace IDs. A recorded playback is explicitly labeled historical and does not perform fresh checks.
+Verified baseline: Reach, Target, Needs review, Likely, Needs review, Needs review. Verified rigor-2 correction: the City College scenario becomes Likely. Positive classified output PASS 95; wrong four-case Likely output FAIL 15; injected instructions blocked before Nicrron. Automated tests cover deterministic policy, failure controls, dataset provenance and bounded Council repair; see docs/SPEC_TRACEABILITY.md for current counts and evidence. Each run has session/revision/input hash and model-stage trace IDs. A recorded playback is explicitly labeled historical and does not perform fresh checks.
 
 The app runs locally on 127.0.0.1:8765. The CaseList Devpost project overview and story are saved as a draft. This release does not claim public hosting, a submitted Devpost entry, or confirmed judge access to the private repository/video.
 
@@ -411,6 +411,14 @@ Original track requirement: reasoning grounded in real outcomes. Without permiss
 
 ### Visible student context
 
-A Student being reviewed card sits above the results on initial load, extraction and comparison views. It shows name, unweighted GPA, readable rigor level, major, activities, full draft essay and confirmed matching tags. Editing the profile updates the card immediately while invalidating stale results. Synthetic comparison students use independently shuffled first-name and surname lists with a fixed random seed; display labels never affect matching, quotations or outcome classifications.
+The single editable student profile shows name, unweighted GPA, readable preparation level, major, activities and full draft essay. Matching tags are available under Matching preferences. Edits invalidate stale results. This supersedes the duplicated overview card used in version 1.4. Synthetic comparison students use independently shuffled first-name and surname lists with a fixed random seed; display labels never affect matching, quotations or outcome classifications.
 
 UI terminology: distinguish a first-year college applicant from a current college student. Label GPA and coursework as high-school preparation, use descriptive coursework options without numeric codes, and explain advanced-course examples. Do not invent transcript courses or school opportunities. Policy values remain 0/1/2 internally.
+
+### Simplified counselor workflow
+
+The single editable profile is the student overview; do not show a second copy alongside it. One primary Build college shortlist action starts guarded extraction automatically. The counselor confirms source quotations once before Council generation; a later GPA/coursework-only correction reuses the reviewed extraction and rebuilds in one click. Source-text changes invalidate extraction and require renewed confirmation. Supported activity tags populate from validated extraction and remain editable under Matching preferences. Reset example, saved replay, local-only comparison and injection controls are under collapsed demo/developer tools. Council receipts move under run checks, while college reasons remain visible and case details are expandable.
+
+## Version 1.5 — release traceability and simpler interaction
+
+Version 1.5 incorporates the single-profile workflow and bounded chairman format repair. Results and PRISM traces include spec version, build commit and working-tree modification state alongside dataset/policy/Council versions. A malformed chairman JSON response receives at most one repair; a still-invalid response remains incomplete. docs/SPEC_TRACEABILITY.md maps acceptance checks to tests, live records and outstanding release gates.

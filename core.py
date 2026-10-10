@@ -2,6 +2,7 @@
 from collections import Counter
 from statistics import median
 import math
+from release import SPEC_VERSION, BUILD_COMMIT, WORKING_TREE_MODIFIED
 
 POLICY_VERSION = "demo_v1"
 CONTEXT = {"gpa_scale": "unweighted_4", "curriculum": "US_demo", "major": "Computer Science", "cycle": 2026, "round": "regular"}
@@ -98,6 +99,7 @@ def build_list(profile, dataset):
         colleges.append({**college, **classify(profile, cases), "cases": cases,
                          "contrast": {"admitted": admitted, "other": other}})
     return {"errors": [], "colleges": colleges, "policy_version": POLICY_VERSION,
+            "spec_version": SPEC_VERSION, "build_commit": BUILD_COMMIT, "working_tree_modified": WORKING_TREE_MODIFIED,
             "dataset_version": dataset["version"], "has_likely": any(c["category"] == "Likely" for c in colleges),
             "category_counts": dict(Counter(c["category"] for c in colleges))}
 

@@ -1,19 +1,19 @@
 CaseList — revised three-minute demonstration
 
 0:00–0:25
-CaseList helps a counselor inspect the evidence behind a college list. Load Avery’s grades, activities and draft essay. The applicant scenarios are synthetic; college program information comes from linked official university pages.
+CaseList helps a counselor inspect the evidence behind a college list. Avery’s grades, activities and draft essay are visible together in one editable profile. The applicant scenarios are synthetic; college program information comes from linked official university pages.
 
 0:25–0:50
-Extract with Nicrron. PRISM checks the input before the model sees it. Review the exact quotations and confirm the student’s academic facts. Click Confirm facts & build with Council.
+Click Build college shortlist; the app extracts experiences through Nicrron automatically. PRISM checks the input before the model sees it. Review the exact quotations and confirm the student’s academic facts. Click Confirm & show college shortlist.
 
 0:50–1:20
-Two models through Nicrron give independent opinions, review anonymous proposals, then a chairman synthesizes the explanation. Code keeps the policy categories fixed and checks quotations against their sources. Open the Council review to see the evidence.
+Two models through Nicrron give independent opinions, review anonymous proposals, then a chairman synthesizes the explanation. Code keeps the policy categories fixed and checks quotations against their sources. Open Checks for this run to inspect the Council review.
 
 1:20–1:55
 Compare an admitted scenario with a rejected scenario. These students have distinct project stories, coursework and commitments. Similar grades and activity tags do not imply identical outcomes. Open the official program source separately: a real program fact does not make our authored admissions outcomes real.
 
 1:55–2:20
-Brooklyn’s cohort has only four cases and stays under review. Binghamton’s cohort has an unresolved waitlist. Correct Avery’s coursework level from 1 to 2 and rebuild. The City College scenario changes under the transparent demonstration policy. This is not a forecast of a real admission decision.
+Brooklyn’s cohort has only four cases and stays under review. Binghamton’s cohort has an unresolved waitlist. Correct Avery’s coursework level from 1 to 2 and click Update college shortlist. The City College scenario changes under the transparent demonstration policy. This is not a forecast of a real admission decision.
 
 2:20–3:00
 Open Checks for this run. Inspect the input check, retrieved PRISM application block, Council source checks and attached output evaluation. The revised baseline passed at 95/100. Explain the next production step: obtain a permissioned historical outcome dataset and validate whether these categories are useful for real students. The current demo proves the workflow, not predictive accuracy.

@@ -11,6 +11,7 @@ import re
 import threading
 import time
 from core import build_list, validate_profile
+from release import SPEC_NAME, SPEC_VERSION, BUILD_COMMIT, WORKING_TREE_MODIFIED
 from council import run_council, parse_json, evidence_packet
 from integrations import nicrron_chat, load_env
 from prism_api import request, project_query, SponsorError
@@ -71,6 +72,7 @@ class Journey:
             'token_count_input': (usage or {}).get('prompt_tokens', 0),
             'token_count_output': (usage or {}).get('completion_tokens', 0),
             'metadata': {'purpose': purpose, 'run_id': self.job['id'], 'revision': self.job['revision'],
+                'spec_name': SPEC_NAME, 'spec_version': SPEC_VERSION, 'build_commit': BUILD_COMMIT, 'working_tree_modified': WORKING_TREE_MODIFIED,
                 'dataset_version': 'synthetic_v2', 'policy_version': 'demo_v1', 'council_version': 'council_v1', **(metadata or {})}}
         response = request('/api/traces', payload, timeout=self.remaining(5))
         with self.record_lock:
