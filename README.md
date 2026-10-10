@@ -14,7 +14,7 @@ Open http://127.0.0.1:8765. Load Avery, build the comparison, inspect the eviden
 
 Working local comparison, deterministic provisional categories, exact source records, editable profile, stale-result invalidation and a correction summary. All records and colleges are fictional. Manual profile entry is explicit; this starter does not claim live AI extraction or sponsor verification.
 
-Nicrron and Prism are **not yet verified**. Put credentials in a local `.env` using `.env.example`. Never paste keys into chat or commit them. Get the three missing Prism control examples from the sponsor; see `docs/PRISM_SETUP.md`. The app deliberately blocks live student processing until those controls are implemented. `python3 integrations.py --smoke` is only a harmless model/trace connectivity test and cannot pass the full release gate.
+Nicrron connectivity has passed a harmless live request; see `docs/NICRRON_CONNECTIVITY.json`. Live extraction/explanation and Prism are **not yet verified**. Put credentials in a local `.env` using `.env.example`. Never paste keys into chat or commit them. Get the three missing Prism control examples from the sponsor; see `docs/PRISM_SETUP.md`. The app deliberately blocks live student processing until those controls are implemented. `python3 integrations.py --smoke` is only a harmless model/trace connectivity test and cannot pass the full release gate.
 
 ## Recorded changes from the initial plan
 

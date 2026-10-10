@@ -1,6 +1,7 @@
 """Verified wire contracts only. Mandatory Prism controls remain explicitly blocked."""
 import json
 import os
+import ssl
 import time
 import urllib.request
 from pathlib import Path
@@ -35,7 +36,13 @@ def readiness():
 def _post(url, payload, headers, timeout):
     body = json.dumps(payload, allow_nan=False).encode()
     request = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json", **headers}, method="POST")
-    with urllib.request.urlopen(request, timeout=timeout) as response:
+    context = ssl.create_default_context()
+    # Some macOS Python distributions omit the system CA bundle.
+    # Add trusted system certificates while retaining TLS verification.
+    system_ca = Path('/etc/ssl/cert.pem')
+    if system_ca.is_file():
+        context.load_verify_locations(cafile=str(system_ca))
+    with urllib.request.urlopen(request, timeout=timeout, context=context) as response:
         return json.load(response)
 
 
