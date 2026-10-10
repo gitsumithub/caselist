@@ -1,0 +1,16 @@
+{
+  "gpa_scale": "unweighted_4",
+  "curriculum": "US_demo",
+  "major": "Computer Science",
+  "cycle": 2026,
+  "round": "regular",
+  "name": "Avery Chen",
+  "gpa": 3.7,
+  "rigor": 1,
+  "activity_tags": [
+    "robotics",
+    "peer_tutoring"
+  ],
+  "activities": "I lead our robotics club and tutor classmates in introductory programming.",
+  "essay": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate to debug later showed me that I enjoy making complicated ideas understandable."
+}

@@ -1,0 +1,2164 @@
+{
+  "version": "synthetic_v1",
+  "synthetic": true,
+  "colleges": [
+    {
+      "college_id": "C01",
+      "name": "Northbridge College",
+      "fictional": true
+    },
+    {
+      "college_id": "C02",
+      "name": "Cedar Valley University",
+      "fictional": true
+    },
+    {
+      "college_id": "C03",
+      "name": "Harbor Institute",
+      "fictional": true
+    },
+    {
+      "college_id": "C04",
+      "name": "Willow State College",
+      "fictional": true
+    },
+    {
+      "college_id": "C05",
+      "name": "Summit Arts and Sciences",
+      "fictional": true
+    },
+    {
+      "college_id": "C06",
+      "name": "Maple Coast University",
+      "fictional": true
+    }
+  ],
+  "applicants": [
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A001",
+      "name": "Synthetic applicant A001",
+      "gpa": 3.5,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A002",
+      "name": "Synthetic applicant A002",
+      "gpa": 3.52,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A003",
+      "name": "Synthetic applicant A003",
+      "gpa": 3.54,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A004",
+      "name": "Synthetic applicant A004",
+      "gpa": 3.56,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A005",
+      "name": "Synthetic applicant A005",
+      "gpa": 3.58,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A006",
+      "name": "Synthetic applicant A006",
+      "gpa": 3.6,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A007",
+      "name": "Synthetic applicant A007",
+      "gpa": 3.62,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A008",
+      "name": "Synthetic applicant A008",
+      "gpa": 3.64,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A009",
+      "name": "Synthetic applicant A009",
+      "gpa": 3.5,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A010",
+      "name": "Synthetic applicant A010",
+      "gpa": 3.52,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A011",
+      "name": "Synthetic applicant A011",
+      "gpa": 3.54,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A012",
+      "name": "Synthetic applicant A012",
+      "gpa": 3.56,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A013",
+      "name": "Synthetic applicant A013",
+      "gpa": 3.58,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A014",
+      "name": "Synthetic applicant A014",
+      "gpa": 3.6,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A015",
+      "name": "Synthetic applicant A015",
+      "gpa": 3.62,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A016",
+      "name": "Synthetic applicant A016",
+      "gpa": 3.64,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A017",
+      "name": "Synthetic applicant A017",
+      "gpa": 3.5,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A018",
+      "name": "Synthetic applicant A018",
+      "gpa": 3.52,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A019",
+      "name": "Synthetic applicant A019",
+      "gpa": 3.54,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A020",
+      "name": "Synthetic applicant A020",
+      "gpa": 3.56,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A021",
+      "name": "Synthetic applicant A021",
+      "gpa": 3.58,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A022",
+      "name": "Synthetic applicant A022",
+      "gpa": 3.6,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A023",
+      "name": "Synthetic applicant A023",
+      "gpa": 3.62,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A024",
+      "name": "Synthetic applicant A024",
+      "gpa": 3.64,
+      "rigor": 2,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A025",
+      "name": "Synthetic applicant A025",
+      "gpa": 3.5,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A026",
+      "name": "Synthetic applicant A026",
+      "gpa": 3.52,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A027",
+      "name": "Synthetic applicant A027",
+      "gpa": 3.54,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A028",
+      "name": "Synthetic applicant A028",
+      "gpa": 3.56,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A029",
+      "name": "Synthetic applicant A029",
+      "gpa": 3.58,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A030",
+      "name": "Synthetic applicant A030",
+      "gpa": 3.6,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A031",
+      "name": "Synthetic applicant A031",
+      "gpa": 3.62,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A032",
+      "name": "Synthetic applicant A032",
+      "gpa": 3.64,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A033",
+      "name": "Synthetic applicant A033",
+      "gpa": 3.5,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A034",
+      "name": "Synthetic applicant A034",
+      "gpa": 3.52,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A035",
+      "name": "Synthetic applicant A035",
+      "gpa": 3.54,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A036",
+      "name": "Synthetic applicant A036",
+      "gpa": 3.56,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A037",
+      "name": "Synthetic applicant A037",
+      "gpa": 3.5,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A038",
+      "name": "Synthetic applicant A038",
+      "gpa": 3.52,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A039",
+      "name": "Synthetic applicant A039",
+      "gpa": 3.54,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A040",
+      "name": "Synthetic applicant A040",
+      "gpa": 3.56,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A041",
+      "name": "Synthetic applicant A041",
+      "gpa": 3.58,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A042",
+      "name": "Synthetic applicant A042",
+      "gpa": 3.6,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A043",
+      "name": "Synthetic applicant A043",
+      "gpa": 3.62,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A044",
+      "name": "Synthetic applicant A044",
+      "gpa": 3.64,
+      "rigor": 1,
+      "activity_tags": [
+        "robotics",
+        "peer_tutoring"
+      ],
+      "activities": "Participated in robotics and tutored peers in programming.",
+      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A045",
+      "name": "Synthetic applicant A045",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A046",
+      "name": "Synthetic applicant A046",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A047",
+      "name": "Synthetic applicant A047",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A048",
+      "name": "Synthetic applicant A048",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A049",
+      "name": "Synthetic applicant A049",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A050",
+      "name": "Synthetic applicant A050",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A051",
+      "name": "Synthetic applicant A051",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A052",
+      "name": "Synthetic applicant A052",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A053",
+      "name": "Synthetic applicant A053",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A054",
+      "name": "Synthetic applicant A054",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A055",
+      "name": "Synthetic applicant A055",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A056",
+      "name": "Synthetic applicant A056",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A057",
+      "name": "Synthetic applicant A057",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A058",
+      "name": "Synthetic applicant A058",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A059",
+      "name": "Synthetic applicant A059",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    },
+    {
+      "gpa_scale": "unweighted_4",
+      "curriculum": "US_demo",
+      "major": "Computer Science",
+      "cycle": 2026,
+      "round": "regular",
+      "applicant_id": "A060",
+      "name": "Synthetic applicant A060",
+      "gpa": 2.0,
+      "rigor": 0,
+      "activity_tags": [
+        "music"
+      ],
+      "activities": "Played in the school orchestra.",
+      "essay": "Practicing music helped me work patiently through difficult passages."
+    }
+  ],
+  "applications": [
+    {
+      "application_id": "APP001",
+      "applicant_id": "A001",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP002",
+      "applicant_id": "A002",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP003",
+      "applicant_id": "A003",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP004",
+      "applicant_id": "A004",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP005",
+      "applicant_id": "A005",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP006",
+      "applicant_id": "A006",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP007",
+      "applicant_id": "A007",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP008",
+      "applicant_id": "A008",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP009",
+      "applicant_id": "A009",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP010",
+      "applicant_id": "A010",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP011",
+      "applicant_id": "A011",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP012",
+      "applicant_id": "A012",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP013",
+      "applicant_id": "A013",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP014",
+      "applicant_id": "A014",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP015",
+      "applicant_id": "A015",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP016",
+      "applicant_id": "A016",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP017",
+      "applicant_id": "A017",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP018",
+      "applicant_id": "A018",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP019",
+      "applicant_id": "A019",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP020",
+      "applicant_id": "A020",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP021",
+      "applicant_id": "A021",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP022",
+      "applicant_id": "A022",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP023",
+      "applicant_id": "A023",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP024",
+      "applicant_id": "A024",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP025",
+      "applicant_id": "A025",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP026",
+      "applicant_id": "A026",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP027",
+      "applicant_id": "A027",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP028",
+      "applicant_id": "A028",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP029",
+      "applicant_id": "A029",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP030",
+      "applicant_id": "A030",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP031",
+      "applicant_id": "A031",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP032",
+      "applicant_id": "A032",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP033",
+      "applicant_id": "A033",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP034",
+      "applicant_id": "A034",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP035",
+      "applicant_id": "A035",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP036",
+      "applicant_id": "A036",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP037",
+      "applicant_id": "A037",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP038",
+      "applicant_id": "A038",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "admitted"
+    },
+    {
+      "application_id": "APP039",
+      "applicant_id": "A039",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP040",
+      "applicant_id": "A040",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP041",
+      "applicant_id": "A041",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP042",
+      "applicant_id": "A042",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP043",
+      "applicant_id": "A043",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP044",
+      "applicant_id": "A044",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "waitlisted"
+    },
+    {
+      "application_id": "APP045",
+      "applicant_id": "A045",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP046",
+      "applicant_id": "A045",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP047",
+      "applicant_id": "A045",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP048",
+      "applicant_id": "A045",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP049",
+      "applicant_id": "A045",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP050",
+      "applicant_id": "A045",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP051",
+      "applicant_id": "A046",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP052",
+      "applicant_id": "A046",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP053",
+      "applicant_id": "A046",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP054",
+      "applicant_id": "A046",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP055",
+      "applicant_id": "A046",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP056",
+      "applicant_id": "A046",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP057",
+      "applicant_id": "A047",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP058",
+      "applicant_id": "A047",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP059",
+      "applicant_id": "A047",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP060",
+      "applicant_id": "A047",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP061",
+      "applicant_id": "A047",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP062",
+      "applicant_id": "A047",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP063",
+      "applicant_id": "A048",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP064",
+      "applicant_id": "A048",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP065",
+      "applicant_id": "A048",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP066",
+      "applicant_id": "A048",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP067",
+      "applicant_id": "A048",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP068",
+      "applicant_id": "A048",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP069",
+      "applicant_id": "A049",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP070",
+      "applicant_id": "A049",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP071",
+      "applicant_id": "A049",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP072",
+      "applicant_id": "A049",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP073",
+      "applicant_id": "A049",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP074",
+      "applicant_id": "A049",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP075",
+      "applicant_id": "A050",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP076",
+      "applicant_id": "A050",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP077",
+      "applicant_id": "A050",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP078",
+      "applicant_id": "A050",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP079",
+      "applicant_id": "A050",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP080",
+      "applicant_id": "A050",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP081",
+      "applicant_id": "A051",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP082",
+      "applicant_id": "A051",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP083",
+      "applicant_id": "A051",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP084",
+      "applicant_id": "A051",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP085",
+      "applicant_id": "A051",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP086",
+      "applicant_id": "A051",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP087",
+      "applicant_id": "A052",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP088",
+      "applicant_id": "A052",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP089",
+      "applicant_id": "A052",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP090",
+      "applicant_id": "A052",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP091",
+      "applicant_id": "A052",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP092",
+      "applicant_id": "A052",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP093",
+      "applicant_id": "A053",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP094",
+      "applicant_id": "A053",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP095",
+      "applicant_id": "A053",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP096",
+      "applicant_id": "A053",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP097",
+      "applicant_id": "A053",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP098",
+      "applicant_id": "A053",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP099",
+      "applicant_id": "A054",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP100",
+      "applicant_id": "A054",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP101",
+      "applicant_id": "A054",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP102",
+      "applicant_id": "A054",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP103",
+      "applicant_id": "A054",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP104",
+      "applicant_id": "A054",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP105",
+      "applicant_id": "A055",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP106",
+      "applicant_id": "A055",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP107",
+      "applicant_id": "A055",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP108",
+      "applicant_id": "A055",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP109",
+      "applicant_id": "A055",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP110",
+      "applicant_id": "A055",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP111",
+      "applicant_id": "A056",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP112",
+      "applicant_id": "A056",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP113",
+      "applicant_id": "A056",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP114",
+      "applicant_id": "A056",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP115",
+      "applicant_id": "A056",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP116",
+      "applicant_id": "A056",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP117",
+      "applicant_id": "A057",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP118",
+      "applicant_id": "A057",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP119",
+      "applicant_id": "A057",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP120",
+      "applicant_id": "A057",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP121",
+      "applicant_id": "A057",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP122",
+      "applicant_id": "A057",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP123",
+      "applicant_id": "A058",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP124",
+      "applicant_id": "A058",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP125",
+      "applicant_id": "A058",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP126",
+      "applicant_id": "A058",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP127",
+      "applicant_id": "A058",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP128",
+      "applicant_id": "A058",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP129",
+      "applicant_id": "A059",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP130",
+      "applicant_id": "A059",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP131",
+      "applicant_id": "A059",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP132",
+      "applicant_id": "A059",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP133",
+      "applicant_id": "A059",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP134",
+      "applicant_id": "A059",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP135",
+      "applicant_id": "A060",
+      "college_id": "C01",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP136",
+      "applicant_id": "A060",
+      "college_id": "C02",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP137",
+      "applicant_id": "A060",
+      "college_id": "C03",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP138",
+      "applicant_id": "A060",
+      "college_id": "C04",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP139",
+      "applicant_id": "A060",
+      "college_id": "C05",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    },
+    {
+      "application_id": "APP140",
+      "applicant_id": "A060",
+      "college_id": "C06",
+      "cycle": 2026,
+      "round": "regular",
+      "outcome": "rejected"
+    }
+  ]
+}
