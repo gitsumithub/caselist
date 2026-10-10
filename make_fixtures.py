@@ -58,6 +58,8 @@ def create():
                               f"Major: Computer Science. Unweighted GPA: {person['gpa']}/4.0. Rigor level: {person['rigor']}.",
                               f"Activities: {person['activities']}", f"Essay: {person['essay']}", ""])
         (kb / f"{college['college_id']}.md").write_text("\n".join(lines))
+    from scenario_enrichment import enrich
+    enrich()
     print(f"Created {len(applicants)} synthetic applicants and {len(applications)} applications.")
 
 

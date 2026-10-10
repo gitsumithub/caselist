@@ -1,36 +1,78 @@
 {
-  "version": "synthetic_v1",
+  "version": "synthetic_v2",
   "synthetic": true,
   "colleges": [
     {
       "college_id": "C01",
-      "name": "Northbridge College",
-      "fictional": true
+      "name": "Stony Brook University",
+      "fictional": false,
+      "reference": {
+        "claim": "Computer Science B.S. appears in the university program directory.",
+        "url": "https://www.stonybrook.edu/academics/majors-minors-and-programs/",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     },
     {
       "college_id": "C02",
-      "name": "Cedar Valley University",
-      "fictional": true
+      "name": "University at Buffalo",
+      "fictional": false,
+      "reference": {
+        "claim": "The university offers a B.S. in Computer Science.",
+        "url": "https://engineering.buffalo.edu/computer-science-engineering/undergraduate/degrees-and-programs/bs-in-computer-science.html",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     },
     {
       "college_id": "C03",
-      "name": "Harbor Institute",
-      "fictional": true
+      "name": "The City College of New York",
+      "fictional": false,
+      "reference": {
+        "claim": "Computer Science undergraduate admissions are handled centrally; Grove School has additional requirements.",
+        "url": "https://www.ccny.cuny.edu/compsci/admissions",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     },
     {
       "college_id": "C04",
-      "name": "Willow State College",
-      "fictional": true
+      "name": "Queens College",
+      "fictional": false,
+      "reference": {
+        "claim": "The department publishes undergraduate Computer Science study options.",
+        "url": "https://www.qc.cuny.edu/academics/cs/undergraduate-studies/",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     },
     {
       "college_id": "C05",
-      "name": "Summit Arts and Sciences",
-      "fictional": true
+      "name": "Brooklyn College",
+      "fictional": false,
+      "reference": {
+        "claim": "The college offers a B.S. in Computer Science.",
+        "url": "https://www.brooklyn.edu/academics/programs/computer-science-bs/",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     },
     {
       "college_id": "C06",
-      "name": "Maple Coast University",
-      "fictional": true
+      "name": "Binghamton University",
+      "fictional": false,
+      "reference": {
+        "claim": "The department publishes undergraduate Computer Science programs.",
+        "url": "https://www.binghamton.edu/computer-science/undergraduate-programs/",
+        "checked_on": "2026-10-10",
+        "type": "Official college program information"
+      },
+      "outcome_scope": "Illustrative scenario outcomes, not this college\u2019s historical admission record"
     }
   ],
   "applicants": [
@@ -41,15 +83,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A001",
-      "name": "Synthetic applicant A001",
+      "name": "Jordan Rivera",
       "gpa": 3.5,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 2 hours per week for 12 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened after school. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -58,15 +109,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A002",
-      "name": "Synthetic applicant A002",
+      "name": "Maya Park",
       "gpa": 3.52,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 3 hours per week for 13 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened at a Saturday workshop. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -75,15 +135,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A003",
-      "name": "Synthetic applicant A003",
+      "name": "Leo Bennett",
       "gpa": 3.54,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 4 hours per week for 14 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened during our spring showcase. I began treating accessibility as a design requirement rather than a final checklist. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -92,15 +161,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A004",
-      "name": "Synthetic applicant A004",
+      "name": "Samira Shah",
       "gpa": 3.56,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 5 hours per week for 15 weeks; balanced the project with cross-country practice.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened with a new club member. A useful program must let people recognize and repair its mistakes. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -109,15 +187,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A005",
-      "name": "Synthetic applicant A005",
+      "name": "Ethan Morgan",
       "gpa": 3.58,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 6 hours per week for 16 weeks; balanced the project with debate club meetings.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened before a community open house. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -126,15 +213,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A006",
-      "name": "Synthetic applicant A006",
+      "name": "Nina Ali",
       "gpa": 3.6,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 2 hours per week for 17 weeks; balanced the project with a school newspaper role.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened during a summer volunteer session. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -143,15 +239,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A007",
-      "name": "Synthetic applicant A007",
+      "name": "Owen Chen",
       "gpa": 3.62,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 3 hours per week for 18 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened in a lunchtime study group. Listening to the people affected by my code changed what I considered a successful solution. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -160,15 +265,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A008",
-      "name": "Synthetic applicant A008",
+      "name": "Priya Patel",
       "gpa": 3.64,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 4 hours per week for 19 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened while preparing a handover to next year\u2019s team. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to write a checklist another student could test.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -177,15 +291,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A009",
-      "name": "Synthetic applicant A009",
+      "name": "Mateo Thompson",
       "gpa": 3.5,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 5 hours per week for 20 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened at a Saturday workshop. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -194,15 +317,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A010",
-      "name": "Synthetic applicant A010",
+      "name": "Zoe Garcia",
       "gpa": 3.52,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 6 hours per week for 21 weeks; balanced the project with cross-country practice.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened during our spring showcase. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -211,15 +343,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A011",
-      "name": "Synthetic applicant A011",
+      "name": "Jordan Williams",
       "gpa": 3.54,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 2 hours per week for 22 weeks; balanced the project with debate club meetings.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened with a new club member. I began treating accessibility as a design requirement rather than a final checklist. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -228,15 +369,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A012",
-      "name": "Synthetic applicant A012",
+      "name": "Maya Nguyen",
       "gpa": 3.56,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 3 hours per week for 23 weeks; balanced the project with a school newspaper role.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened before a community open house. A useful program must let people recognize and repair its mistakes. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -245,15 +395,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A013",
-      "name": "Synthetic applicant A013",
+      "name": "Leo Anderson",
       "gpa": 3.58,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 4 hours per week for 24 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened during a summer volunteer session. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -262,15 +421,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A014",
-      "name": "Synthetic applicant A014",
+      "name": "Samira Martinez",
       "gpa": 3.6,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 5 hours per week for 25 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened in a lunchtime study group. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -279,15 +447,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A015",
-      "name": "Synthetic applicant A015",
+      "name": "Ethan Wilson",
       "gpa": 3.62,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 6 hours per week for 26 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened while preparing a handover to next year\u2019s team. Listening to the people affected by my code changed what I considered a successful solution. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -296,15 +473,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A016",
-      "name": "Synthetic applicant A016",
+      "name": "Nina Brown",
       "gpa": 3.64,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 2 hours per week for 27 weeks; balanced the project with cross-country practice.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened after school. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to ask a beginner to explain the result back to me.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -313,15 +499,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A017",
-      "name": "Synthetic applicant A017",
+      "name": "Owen Davis",
       "gpa": 3.5,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 3 hours per week for 28 weeks; balanced the project with debate club meetings.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened during our spring showcase. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -330,15 +525,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A018",
-      "name": "Synthetic applicant A018",
+      "name": "Priya Rodriguez",
       "gpa": 3.52,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 4 hours per week for 12 weeks; balanced the project with a school newspaper role.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened with a new club member. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -347,15 +551,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A019",
-      "name": "Synthetic applicant A019",
+      "name": "Mateo Lee",
       "gpa": 3.54,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 5 hours per week for 13 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened before a community open house. I began treating accessibility as a design requirement rather than a final checklist. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -364,15 +577,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A020",
-      "name": "Synthetic applicant A020",
+      "name": "Zoe Walker",
       "gpa": 3.56,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 6 hours per week for 14 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened during a summer volunteer session. A useful program must let people recognize and repair its mistakes. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -381,15 +603,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A021",
-      "name": "Synthetic applicant A021",
+      "name": "Jordan Hall",
       "gpa": 3.58,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 2 hours per week for 15 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened in a lunchtime study group. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -398,15 +629,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A022",
-      "name": "Synthetic applicant A022",
+      "name": "Maya Allen",
       "gpa": 3.6,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 3 hours per week for 16 weeks; balanced the project with cross-country practice.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened while preparing a handover to next year\u2019s team. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -415,15 +655,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A023",
-      "name": "Synthetic applicant A023",
+      "name": "Leo Young",
       "gpa": 3.62,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 4 hours per week for 17 weeks; balanced the project with debate club meetings.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened after school. Listening to the people affected by my code changed what I considered a successful solution. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -432,15 +681,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A024",
-      "name": "Synthetic applicant A024",
+      "name": "Samira Hernandez",
       "gpa": 3.64,
       "rigor": 2,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 5 hours per week for 18 weeks; balanced the project with a school newspaper role.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened at a Saturday workshop. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to keep a notebook of failed attempts as well as working ones.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "AP Computer Science A",
+        "AP Calculus AB",
+        "AP Physics 1",
+        "AP English Language"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -449,15 +707,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A025",
-      "name": "Synthetic applicant A025",
+      "name": "Ethan King",
       "gpa": 3.5,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 6 hours per week for 19 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened with a new club member. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -466,15 +733,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A026",
-      "name": "Synthetic applicant A026",
+      "name": "Nina Wright",
       "gpa": 3.52,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 2 hours per week for 20 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened before a community open house. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -483,15 +759,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A027",
-      "name": "Synthetic applicant A027",
+      "name": "Owen Lopez",
       "gpa": 3.54,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 3 hours per week for 21 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened during a summer volunteer session. I began treating accessibility as a design requirement rather than a final checklist. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -500,15 +785,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A028",
-      "name": "Synthetic applicant A028",
+      "name": "Priya Hill",
       "gpa": 3.56,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 4 hours per week for 22 weeks; balanced the project with cross-country practice.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened in a lunchtime study group. A useful program must let people recognize and repair its mistakes. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -517,15 +811,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A029",
-      "name": "Synthetic applicant A029",
+      "name": "Mateo Scott",
       "gpa": 3.58,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 5 hours per week for 23 weeks; balanced the project with debate club meetings.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened while preparing a handover to next year\u2019s team. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -534,15 +837,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A030",
-      "name": "Synthetic applicant A030",
+      "name": "Zoe Green",
       "gpa": 3.6,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 6 hours per week for 24 weeks; balanced the project with a school newspaper role.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened after school. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -551,15 +863,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A031",
-      "name": "Synthetic applicant A031",
+      "name": "Jordan Adams",
       "gpa": 3.62,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 2 hours per week for 25 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened at a Saturday workshop. Listening to the people affected by my code changed what I considered a successful solution. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -568,15 +889,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A032",
-      "name": "Synthetic applicant A032",
+      "name": "Maya Baker",
       "gpa": 3.64,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 3 hours per week for 26 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened during our spring showcase. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to make the instructions usable without my help.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -585,15 +915,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A033",
-      "name": "Synthetic applicant A033",
+      "name": "Leo Nelson",
       "gpa": 3.5,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 4 hours per week for 27 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened before a community open house. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -602,15 +941,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A034",
-      "name": "Synthetic applicant A034",
+      "name": "Samira Carter",
       "gpa": 3.52,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 5 hours per week for 28 weeks; balanced the project with cross-country practice.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened during a summer volunteer session. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -619,15 +967,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A035",
-      "name": "Synthetic applicant A035",
+      "name": "Ethan Mitchell",
       "gpa": 3.54,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 6 hours per week for 12 weeks; balanced the project with debate club meetings.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened in a lunchtime study group. I began treating accessibility as a design requirement rather than a final checklist. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -636,15 +993,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A036",
-      "name": "Synthetic applicant A036",
+      "name": "Nina Perez",
       "gpa": 3.56,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 2 hours per week for 13 weeks; balanced the project with a school newspaper role.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened while preparing a handover to next year\u2019s team. A useful program must let people recognize and repair its mistakes. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -653,15 +1019,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A037",
-      "name": "Synthetic applicant A037",
+      "name": "Owen Roberts",
       "gpa": 3.5,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 3 hours per week for 14 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened after school. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -670,15 +1045,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A038",
-      "name": "Synthetic applicant A038",
+      "name": "Priya Turner",
       "gpa": 3.52,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 4 hours per week for 15 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened at a Saturday workshop. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -687,15 +1071,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A039",
-      "name": "Synthetic applicant A039",
+      "name": "Mateo Phillips",
       "gpa": 3.54,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 5 hours per week for 16 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened during our spring showcase. Listening to the people affected by my code changed what I considered a successful solution. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -704,15 +1097,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A040",
-      "name": "Synthetic applicant A040",
+      "name": "Zoe Campbell",
       "gpa": 3.56,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 6 hours per week for 17 weeks; balanced the project with cross-country practice.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened with a new club member. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to compare two approaches before choosing one.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -721,15 +1123,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A041",
-      "name": "Synthetic applicant A041",
+      "name": "Jordan Evans",
       "gpa": 3.58,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 2 hours per week for 18 weeks; balanced the project with debate club meetings.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened during a summer volunteer session. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -738,15 +1149,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A042",
-      "name": "Synthetic applicant A042",
+      "name": "Maya Edwards",
       "gpa": 3.6,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 3 hours per week for 19 weeks; balanced the project with a school newspaper role.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened in a lunchtime study group. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -755,15 +1175,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A043",
-      "name": "Synthetic applicant A043",
+      "name": "Leo Collins",
       "gpa": 3.62,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 4 hours per week for 20 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened while preparing a handover to next year\u2019s team. I began treating accessibility as a design requirement rather than a final checklist. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -772,15 +1201,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A044",
-      "name": "Synthetic applicant A044",
+      "name": "Samira Stewart",
       "gpa": 3.64,
       "rigor": 1,
       "activity_tags": [
         "robotics",
         "peer_tutoring"
       ],
-      "activities": "Participated in robotics and tutored peers in programming.",
-      "essay": "I learned to explain debugging steps while helping another student repair a robotics project."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 5 hours per week for 21 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened after school. A useful program must let people recognize and repair its mistakes. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "AP Computer Science Principles",
+        "Honors Precalculus",
+        "English 11",
+        "Physics"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -789,14 +1227,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A045",
-      "name": "Synthetic applicant A045",
+      "name": "Ethan Sanchez",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 6 hours per week for 22 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened at a Saturday workshop. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -805,14 +1253,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A046",
-      "name": "Synthetic applicant A046",
+      "name": "Nina Morris",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 2 hours per week for 23 weeks; balanced the project with cross-country practice.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened during our spring showcase. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -821,14 +1279,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A047",
-      "name": "Synthetic applicant A047",
+      "name": "Owen Rogers",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 3 hours per week for 24 weeks; balanced the project with debate club meetings.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened with a new club member. Listening to the people affected by my code changed what I considered a successful solution. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -837,14 +1305,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A048",
-      "name": "Synthetic applicant A048",
+      "name": "Priya Reed",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 4 hours per week for 25 weeks; balanced the project with a school newspaper role.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened before a community open house. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to admit which part of the result I could not yet explain.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -853,14 +1331,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A049",
-      "name": "Synthetic applicant A049",
+      "name": "Mateo Cook",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 5 hours per week for 26 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened in a lunchtime study group. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -869,14 +1357,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A050",
-      "name": "Synthetic applicant A050",
+      "name": "Zoe Bell",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 6 hours per week for 27 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened while preparing a handover to next year\u2019s team. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -885,14 +1383,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A051",
-      "name": "Synthetic applicant A051",
+      "name": "Jordan Murphy",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 2 hours per week for 28 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened after school. I began treating accessibility as a design requirement rather than a final checklist. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -901,14 +1409,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A052",
-      "name": "Synthetic applicant A052",
+      "name": "Maya Bailey",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 3 hours per week for 12 weeks; balanced the project with cross-country practice.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened at a Saturday workshop. A useful program must let people recognize and repair its mistakes. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -917,14 +1435,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A053",
-      "name": "Synthetic applicant A053",
+      "name": "Leo Cooper",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Created a troubleshooting notebook for the robotics team and hosted lunchtime debugging sessions. Worked 4 hours per week for 13 weeks; balanced the project with debate club meetings.",
+      "essay": "The senior programmer graduated with the only working setup on a laptop. I rebuilt the instructions on a clean machine. This happened during our spring showcase. Documentation became a way to include teammates who were afraid to ask basic questions. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "robotics team documentation",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -933,14 +1461,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A054",
-      "name": "Synthetic applicant A054",
+      "name": "Samira Richardson",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Logged readings from a school water sensor and taught younger robotics members to plot measurements. Worked 5 hours per week for 14 weeks; balanced the project with a school newspaper role.",
+      "essay": "One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one. This happened with a new club member. I learned to question attractive conclusions when the measurement process was uncertain. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "water monitoring project",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -949,14 +1487,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A055",
-      "name": "Synthetic applicant A055",
+      "name": "Ethan Cox",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Built a peer tutoring signup tool and helped the robotics team organize practice sessions. Worked 6 hours per week for 15 weeks; balanced the project with a weekend grocery shift.",
+      "essay": "My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules. This happened before a community open house. Listening to the people affected by my code changed what I considered a successful solution. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "peer tutoring scheduler",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -965,14 +1513,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A056",
-      "name": "Synthetic applicant A056",
+      "name": "Nina Howard",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming. Worked 2 hours per week for 16 weeks; balanced the project with school orchestra rehearsals.",
+      "essay": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each test. This happened during a summer volunteer session. Small, reversible tests helped me explain technical work without pretending I already knew the answer. My next step was to leave time for another person to challenge my assumptions.",
+      "synthetic": true,
+      "project": "repair cafe diagnostic guide",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -981,14 +1539,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A057",
-      "name": "Synthetic applicant A057",
+      "name": "Owen Ward",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Built a calibration log for the robotics team and tutored two beginners through sensor tests. Worked 3 hours per week for 17 weeks; balanced the project with caring for a younger sibling.",
+      "essay": "A wheel encoder counted turns while the robot stood still. I recorded ten trials before blaming the code. This happened while preparing a handover to next year\u2019s team. I learned that explaining a failed test can help a team more than presenting a perfect result. My next step was to organize a short practice session instead of adding more features.",
+      "synthetic": true,
+      "project": "robotics sensor calibration",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -997,14 +1565,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A058",
-      "name": "Synthetic applicant A058",
+      "name": "Priya Torres",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Ran a library programming workshop using paper algorithms before introducing Python. Worked 4 hours per week for 18 weeks; balanced the project with cross-country practice.",
+      "essay": "A participant could follow my code but could not explain the loop. I replaced the screen with numbered cards. This happened after school. Teaching made me notice the assumptions I had hidden inside my own explanations. My next step was to organize a short practice session instead of adding more features.",
+      "synthetic": true,
+      "project": "library coding workshop",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -1013,14 +1591,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A059",
-      "name": "Synthetic applicant A059",
+      "name": "Mateo Peterson",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Redesigned the robotics club website for keyboard navigation and coached classmates in HTML. Worked 5 hours per week for 19 weeks; balanced the project with debate club meetings.",
+      "essay": "Our event form trapped keyboard users inside a menu. I asked a classmate to test without a mouse. This happened at a Saturday workshop. I began treating accessibility as a design requirement rather than a final checklist. My next step was to organize a short practice session instead of adding more features.",
+      "synthetic": true,
+      "project": "accessible club website",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     },
     {
       "gpa_scale": "unweighted_4",
@@ -1029,14 +1617,24 @@
       "cycle": 2026,
       "round": "regular",
       "applicant_id": "A060",
-      "name": "Synthetic applicant A060",
+      "name": "Zoe Gray",
       "gpa": 2.0,
       "rigor": 0,
       "activity_tags": [
-        "music"
+        "robotics",
+        "peer_tutoring"
       ],
-      "activities": "Played in the school orchestra.",
-      "essay": "Practicing music helped me work patiently through difficult passages."
+      "activities": "Wrote a small inventory tool for a food pantry and taught volunteers how to check its totals. Worked 6 hours per week for 20 weeks; balanced the project with a school newspaper role.",
+      "essay": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction history. This happened during our spring showcase. A useful program must let people recognize and repair its mistakes. My next step was to organize a short practice session instead of adding more features.",
+      "synthetic": true,
+      "project": "food pantry inventory",
+      "courses": [
+        "Algebra II",
+        "English 11",
+        "Biology",
+        "Introductory Computing"
+      ],
+      "provenance": "Authored synthetic scenario; profile and application decisions are not historical records."
     }
   ],
   "applications": [
@@ -1046,7 +1644,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP002",
@@ -1054,7 +1653,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP003",
@@ -1062,7 +1662,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP004",
@@ -1070,7 +1671,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP005",
@@ -1078,7 +1680,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP006",
@@ -1086,7 +1689,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP007",
@@ -1094,7 +1698,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP008",
@@ -1102,7 +1707,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP009",
@@ -1110,7 +1716,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP010",
@@ -1118,7 +1725,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP011",
@@ -1126,7 +1734,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP012",
@@ -1134,7 +1743,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP013",
@@ -1142,7 +1752,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP014",
@@ -1150,7 +1761,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP015",
@@ -1158,7 +1770,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP016",
@@ -1166,7 +1779,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP017",
@@ -1174,7 +1788,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP018",
@@ -1182,7 +1797,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP019",
@@ -1190,7 +1806,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP020",
@@ -1198,7 +1815,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP021",
@@ -1206,7 +1824,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP022",
@@ -1214,7 +1833,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP023",
@@ -1222,7 +1842,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP024",
@@ -1230,7 +1851,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP025",
@@ -1238,7 +1860,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP026",
@@ -1246,7 +1869,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP027",
@@ -1254,7 +1878,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP028",
@@ -1262,7 +1887,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP029",
@@ -1270,7 +1896,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP030",
@@ -1278,7 +1905,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP031",
@@ -1286,7 +1914,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP032",
@@ -1294,7 +1923,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP033",
@@ -1302,7 +1932,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP034",
@@ -1310,7 +1941,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP035",
@@ -1318,7 +1950,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP036",
@@ -1326,7 +1959,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP037",
@@ -1334,7 +1968,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP038",
@@ -1342,7 +1977,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "admitted"
+      "outcome": "admitted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP039",
@@ -1350,7 +1986,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP040",
@@ -1358,7 +1995,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP041",
@@ -1366,7 +2004,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP042",
@@ -1374,7 +2013,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP043",
@@ -1382,7 +2022,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP044",
@@ -1390,7 +2031,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "waitlisted"
+      "outcome": "waitlisted",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP045",
@@ -1398,7 +2040,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP046",
@@ -1406,7 +2049,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP047",
@@ -1414,7 +2058,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP048",
@@ -1422,7 +2067,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP049",
@@ -1430,7 +2076,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP050",
@@ -1438,7 +2085,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP051",
@@ -1446,7 +2094,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP052",
@@ -1454,7 +2103,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP053",
@@ -1462,7 +2112,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP054",
@@ -1470,7 +2121,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP055",
@@ -1478,7 +2130,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP056",
@@ -1486,7 +2139,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP057",
@@ -1494,7 +2148,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP058",
@@ -1502,7 +2157,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP059",
@@ -1510,7 +2166,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP060",
@@ -1518,7 +2175,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP061",
@@ -1526,7 +2184,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP062",
@@ -1534,7 +2193,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP063",
@@ -1542,7 +2202,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP064",
@@ -1550,7 +2211,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP065",
@@ -1558,7 +2220,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP066",
@@ -1566,7 +2229,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP067",
@@ -1574,7 +2238,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP068",
@@ -1582,7 +2247,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP069",
@@ -1590,7 +2256,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP070",
@@ -1598,7 +2265,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP071",
@@ -1606,7 +2274,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP072",
@@ -1614,7 +2283,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP073",
@@ -1622,7 +2292,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP074",
@@ -1630,7 +2301,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP075",
@@ -1638,7 +2310,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP076",
@@ -1646,7 +2319,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP077",
@@ -1654,7 +2328,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP078",
@@ -1662,7 +2337,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP079",
@@ -1670,7 +2346,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP080",
@@ -1678,7 +2355,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP081",
@@ -1686,7 +2364,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP082",
@@ -1694,7 +2373,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP083",
@@ -1702,7 +2382,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP084",
@@ -1710,7 +2391,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP085",
@@ -1718,7 +2400,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP086",
@@ -1726,7 +2409,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP087",
@@ -1734,7 +2418,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP088",
@@ -1742,7 +2427,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP089",
@@ -1750,7 +2436,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP090",
@@ -1758,7 +2445,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP091",
@@ -1766,7 +2454,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP092",
@@ -1774,7 +2463,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP093",
@@ -1782,7 +2472,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP094",
@@ -1790,7 +2481,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP095",
@@ -1798,7 +2490,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP096",
@@ -1806,7 +2499,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP097",
@@ -1814,7 +2508,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP098",
@@ -1822,7 +2517,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP099",
@@ -1830,7 +2526,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP100",
@@ -1838,7 +2535,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP101",
@@ -1846,7 +2544,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP102",
@@ -1854,7 +2553,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP103",
@@ -1862,7 +2562,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP104",
@@ -1870,7 +2571,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP105",
@@ -1878,7 +2580,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP106",
@@ -1886,7 +2589,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP107",
@@ -1894,7 +2598,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP108",
@@ -1902,7 +2607,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP109",
@@ -1910,7 +2616,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP110",
@@ -1918,7 +2625,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP111",
@@ -1926,7 +2634,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP112",
@@ -1934,7 +2643,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP113",
@@ -1942,7 +2652,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP114",
@@ -1950,7 +2661,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP115",
@@ -1958,7 +2670,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP116",
@@ -1966,7 +2679,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP117",
@@ -1974,7 +2688,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP118",
@@ -1982,7 +2697,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP119",
@@ -1990,7 +2706,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP120",
@@ -1998,7 +2715,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP121",
@@ -2006,7 +2724,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP122",
@@ -2014,7 +2733,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP123",
@@ -2022,7 +2742,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP124",
@@ -2030,7 +2751,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP125",
@@ -2038,7 +2760,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP126",
@@ -2046,7 +2769,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP127",
@@ -2054,7 +2778,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP128",
@@ -2062,7 +2787,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP129",
@@ -2070,7 +2796,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP130",
@@ -2078,7 +2805,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP131",
@@ -2086,7 +2814,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP132",
@@ -2094,7 +2823,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP133",
@@ -2102,7 +2832,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP134",
@@ -2110,7 +2841,8 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP135",
@@ -2118,7 +2850,8 @@
       "college_id": "C01",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP136",
@@ -2126,7 +2859,8 @@
       "college_id": "C02",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP137",
@@ -2134,7 +2868,8 @@
       "college_id": "C03",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP138",
@@ -2142,7 +2877,8 @@
       "college_id": "C04",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP139",
@@ -2150,7 +2886,8 @@
       "college_id": "C05",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     },
     {
       "application_id": "APP140",
@@ -2158,7 +2895,14 @@
       "college_id": "C06",
       "cycle": 2026,
       "round": "regular",
-      "outcome": "rejected"
+      "outcome": "rejected",
+      "provenance": "Authored scenario decision; no causal explanation or empirical admission rate is implied."
     }
-  ]
+  ],
+  "provenance": {
+    "applicants": "60 authored scenarios with unique essays and activities",
+    "outcomes": "Designed fixtures for policy branches, sparse evidence and unresolved waitlists; not sampled admission results",
+    "college_facts": "Official program pages checked October 10, 2026",
+    "limitation": "Names of real institutions do not make generated outcomes empirical. This prototype cannot validate real-outcome predictions."
+  }
 }

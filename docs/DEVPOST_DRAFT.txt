@@ -8,7 +8,7 @@ What it does
 Confirm a fictional student's academic facts, extract exact essay experiences with Nicrron, review quotations, and build a six-college provisional list. Compare admitted and rejected records, inspect sparse-data and waitlist uncertainty, and correct course rigor to recompute the result.
 
 How we built it
-Python with a lightweight local server and HTML/JavaScript frontend. Frozen synthetic_v1 contains 60 applicants, 140 applications and six fictional colleges. Deterministic demo_v1 policy performs eligibility, matching and category assignment. Nicrron routes Claude Haiku 4.5 and GPT-4o mini through independent opinions, anonymous peer reviews and chairman synthesis inspired by Karpathy's LLM Council. Code validates exact citations and preserves policy categories. PRISM supplies pre-inference Guardrail evaluation, Knowledge Base outcome references, model traces and a classified-output Evaluator.
+Python with a lightweight local server and HTML/JavaScript frontend. Frozen synthetic_v2 contains 60 applicants, 140 applications and six named colleges with official program references. Deterministic demo_v1 policy performs eligibility, matching and category assignment. Nicrron routes Claude Haiku 4.5 and GPT-4o mini through independent opinions, anonymous peer reviews and chairman synthesis inspired by Karpathy's LLM Council. Code validates exact citations and preserves policy categories. PRISM supplies pre-inference Guardrail evaluation, Knowledge Base outcome references, model traces and a classified-output Evaluator.
 
 Challenges and learning
 Model agreement can still contain incorrect citations and unsupported interpretation. We preserve disagreements and validate the final source references. PRISM judge context is bounded, so the evaluation payload uses shared quotation references rather than repeating every retrieved essay. Failure or timeout keeps results under review. Synthetic correctness does not establish real admissions validity.
@@ -25,3 +25,6 @@ https://github.com/gitsumithub/caselist
 Demo
 Local app: http://127.0.0.1:8765 (requires running locally).
 Public video URL and judge repository access must be confirmed before final submission.
+
+
+October 10 revision: synthetic_v2 contains 60 distinct authored applicant essays and activity descriptions, 140 scenario application outcomes, coursework, contrasting admitted/non-admitted examples, and six separately sourced official college program references. Applicant decisions are designed policy fixtures, not reported decisions by the named colleges. Real-outcome validation remains a production requirement. Use docs/DEMO_SCRIPT.txt for the revised recording; previous video screenshots describe an older release.

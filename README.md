@@ -25,3 +25,6 @@ python3 -m unittest discover -s tests -v
 All colleges and records are fictional. Categories are provisional demonstration labels, not validated admission predictions. Live check status applies only to its recorded run. See `docs/DELIVERY_RECORD.md` for verified results and remaining submission tasks.
 
 The three-minute narrated screenshot walkthrough is `docs/demo/CaseList-demo.mp4` locally (ignored by Git). To rebuild after updating captured screenshots, install `imageio-ffmpeg` and run `.venv/bin/python scripts/build_demo.py` on macOS. The live rehearsal script is `docs/DEMO_SCRIPT.txt`.
+
+
+October 10 revision: synthetic_v2 contains 60 distinct authored applicant essays and activity descriptions, 140 scenario application outcomes, coursework, contrasting admitted/non-admitted examples, and six separately sourced official college program references. Applicant decisions are designed policy fixtures, not reported decisions by the named colleges. Real-outcome validation remains a production requirement. Use docs/DEMO_SCRIPT.txt for the revised recording; previous video screenshots describe an older release.

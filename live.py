@@ -71,7 +71,7 @@ class Journey:
             'token_count_input': (usage or {}).get('prompt_tokens', 0),
             'token_count_output': (usage or {}).get('completion_tokens', 0),
             'metadata': {'purpose': purpose, 'run_id': self.job['id'], 'revision': self.job['revision'],
-                'dataset_version': 'synthetic_v1', 'policy_version': 'demo_v1', 'council_version': 'council_v1', **(metadata or {})}}
+                'dataset_version': 'synthetic_v2', 'policy_version': 'demo_v1', 'council_version': 'council_v1', **(metadata or {})}}
         response = request('/api/traces', payload, timeout=self.remaining(5))
         with self.record_lock:
             self.traces.append({'id': response['id'], 'trace_id': payload['trace_id'], 'purpose': purpose, 'model': model})
@@ -171,10 +171,10 @@ def validate_kb_chunk(chunk, case, college_id, document_id):
         return None
     block = match.group(0)
     required = f"College: {college_id}; cycle: {case['cycle']}; round: {case['round']}; outcome: {case['outcome']}."
-    if required not in block or 'synthetic_v1' not in chunk.get('doc_name', ''):
+    if required not in block or 'synthetic_v2' not in chunk.get('doc_name', ''):
         return None
     return {'status': 'passed', 'document_id': document_id, 'chunk_id': chunk['id'],
-        'dataset_version': 'synthetic_v1', 'application_id': case['application_id'], 'applicant_id': case['applicant_id'],
+        'dataset_version': 'synthetic_v2', 'application_id': case['application_id'], 'applicant_id': case['applicant_id'],
         'outcome': case['outcome'], 'claim': f"{case['applicant_id']} was {case['outcome']} by {college_id} in the synthetic records.",
         'excerpt': block[:1200]}
 
@@ -183,7 +183,7 @@ def ground(college, journey):
     if not college['cases']:
         return {'status': 'not_applicable', 'reason': 'No eligible records to ground.'}
     case = college['cases'][0]
-    query = f"synthetic_v1 {college['college_id']} {case['application_id']} {case['applicant_id']} outcome"
+    query = f"synthetic_v2 {college['college_id']} {case['application_id']} {case['applicant_id']} outcome"
     response = request('/api/knowledge-base/search', {'project_id': config()['project_id'], 'agent_id': 'caselist',
         'query': query, 'limit': 8}, timeout=journey.remaining(10))
     doc_id = config()['kb_documents'][college['college_id']]
@@ -260,7 +260,7 @@ def generate(profile, extraction_id, dataset, journey):
     references = {'expected_categories': {c['college_id']: c['category'] for c in result['colleges']},
         'canonical_counts': {c['college_id']: c['counts'] for c in result['colleges']},
         'canonical_citations': citations, 'exact_source_quotes': quotes,
-        'scope': 'Fictional synthetic_v1 policy consistency only; not admissions validity or prediction.'}
+        'scope': 'Fictional synthetic_v2 policy consistency only; not admissions validity or prediction.'}
     output = {'scope': references['scope'], 'colleges': [{k: c[k] for k in ('college_id', 'category', 'counts', 'n')} |
         {'citation_ref': c['college_id'] if c['college_id'] in citations else None} for c in result['colleges']]}
     trace_id = journey.trace([{'role': 'user', 'content': json.dumps(references, separators=(',', ':'))}], json.dumps(output, separators=(',', ':')),

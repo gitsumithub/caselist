@@ -2,9 +2,9 @@
 
 CaseList generates a provisional reach / target / likely college list from a student’s grades, activities and draft essay, supported by inspectable past applicant records. A counselor can examine conflicting outcomes, correct a profile fact and regenerate the list.
 
-Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.3. On October 10 the user explicitly authorized adding LLM Council through Nicrron and completing the live app and demo. Version 1.2 remains preserved in Git history. The live Council journey and sponsor control checks have passed on recorded synthetic runs; see docs/DELIVERY_RECORD.md. Public video and judge access remain submission requirements.
+Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.4. On October 10 the user explicitly authorized adding LLM Council through Nicrron and completing the live app and demo. Version 1.2 remains preserved in Git history. The live Council journey and sponsor control checks have passed on recorded synthetic runs; see docs/DELIVERY_RECORD.md. Public video and judge access remain submission requirements.
 
-All student histories and outcomes in this prototype are synthetic, as instructed by the organizers. The prototype demonstrates traceable behavior against those records; it does not validate admissions predictions.
+All student histories and outcomes in this prototype are synthetic, as explicitly authorized by the user on October 10. The prototype demonstrates traceable behavior against those records; it does not validate admissions predictions.
 
 ## Start here and first five minutes
 
@@ -168,13 +168,13 @@ Essay handling: extract stated experiences and interests with exact quotes and s
 
 ## Synthetic data contract
 
-Create six fictional colleges, 60 fictional past applicants and 140 application records. Use a fixed seed and manually designed edge cases. Separate applicant identity from application outcome so one applicant can have several college applications without being counted twice within a college.
+Use six named colleges with separately sourced official program information, 60 authored synthetic applicants and 140 scenario application records. Use a fixed seed and manually designed edge cases. Separate applicant identity from application outcome so one applicant can have several college applications without being counted twice within a college.
 
 Student and applicant fields: applicant_id, GPA value, GPA scale, curriculum context, course-rigor level, intended-major group, activity tags and descriptions, essay text and evidence excerpts.
 
 Application fields: application_id, applicant_id, college_id, cycle, application round and outcome. Outcomes are admitted, rejected or waitlisted. The demo uses one fixed cycle, regular decision and one documented curriculum context.
 
-College fields: college_id, fictional name and program groups. Do not fabricate real college statistics.
+College fields: college_id, real institution name, official program-reference URL, checked date, and explicit synthetic-outcome scope. Do not fabricate real college statistics.
 
 Version the dataset and policy. Include a small separate expected-results file for hand-authored tests. Outcomes must be fixed before running the app; do not modify them during a demo to obtain a desired recommendation. Synthetic fixture success demonstrates software behavior, not calibration on real students.
 
@@ -331,7 +331,7 @@ The success condition is a complete list with a visible disagreement, a specific
 
 Record a focused demo of approximately three minutes, adjusted if organizers specify a limit. Reuse an honestly labeled captured live run to avoid dead time, but also be ready to run the controls live for judges:
 
-1. Load the fictional student with grades, activities and an essay.
+1. Load the synthetic student with grades, activities and an essay.
 
 2. Generate the list and inspect a Target card with similar applicants who had different outcomes.
 
@@ -400,3 +400,11 @@ The attached Evaluator checks the compact classified output: all six IDs, catego
 Verified baseline: Reach, Target, Needs review, Likely, Needs review, Needs review. Verified rigor-2 correction: Harbor becomes Likely. Positive classified output PASS 95; wrong four-case Likely output FAIL 15; injected instructions blocked before Nicrron. Eleven tests cover deterministic policy and key failure controls. Each run has session/revision/input hash and model-stage trace IDs. A recorded playback is explicitly labeled historical and does not perform fresh checks.
 
 The app runs locally on 127.0.0.1:8765. The CaseList Devpost project overview and story are saved as a draft. This release does not claim public hosting, a submitted Devpost entry, or confirmed judge access to the private repository/video.
+
+## Version 1.4 — credible synthetic demonstration
+
+The user confirmed no organizer applicant dataset exists and authorized created synthetic data. synthetic_v2 preserves the demo_v1 policy fixtures so the examples remain inspectable, while replacing repeated applicant text with unique essays, activities, named scenario students and coursework consistent with rigor. Each outcome remains an authored fixture, not a reported decision by the named institution. Do not use fixture counts to describe real institutional admission rates or selectivity.
+
+The UI shows an admitted scenario beside a rejected or waitlisted scenario, academic differences, shared tags and coursework. Retrieval weights are visible; essay meaning is reviewed separately by Council. Names do not enter matching. Official university program facts have separate links and verification dates. PRISM must query new versioned documents; old recorded passes cannot certify this release.
+
+Original track requirement: reasoning grounded in real outcomes. Without permissioned historical outcomes, this prototype demonstrates the workflow using synthetic outcomes and does not satisfy empirical validation of that requirement. Obtaining and validating a permissioned outcome dataset remains the production step.

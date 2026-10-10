@@ -21,3 +21,12 @@ Replay evidence is in `data/demo_runs.json`, explicitly labeled Recorded run. Ra
 The existing Devpost draft is now CaseList. Overview, pitch, story, Python tag and repository URL were saved. Draft: https://devpost.com/submit-to/31652-get-hired-hack-columbia-startup-lab/manage/submissions/1229455-caselist/additional-info/edit
 
 A public demo-video URL is required. The repository is private by user preference; judge access is unverified. Final Devpost submission and public application deployment are not complete. No claims of real admissions validation.
+
+
+## Synthetic v2 release, October 10
+
+Replaced identical applicant prose with 60 unique essays and activity descriptions, named scenario students, coursework and explicit generated-outcome provenance. Added six official institution program references, contrasted admitted/rejected scenarios and exposed matching factors. Simplified run status for nontechnical users. SPEC version 1.4 records the remaining real-outcome validation gap. Thirteen automated tests pass, including diversity/provenance checks. Revised live baseline: Council passed, all six KB checks passed, attached Evaluator PASS 95/100; trace ff7c2529-7522-4736-a4e6-973b7cd833da, result 4fcea421-31b9-4ae9-bb25-0f780a3e0dd4. Coursework correction verification is recorded in data/demo_runs.json when complete.
+
+Correction retry passed all checks; source quoting was tightened to each college’s cited case after an initial failed source check. Both saved synthetic_v2 runs now have live_sponsors_verified=true. New-version injection was blocked before model inference. Negative classified-output control failed at 15/100.
+
+All 60 scenario display surnames are distinct. Display names do not enter model packets or policy matching. PRISM reference revision removes name labels and grounds stable application IDs, profiles and outcomes; saved-run KB receipts were refreshed against these documents.

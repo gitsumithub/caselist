@@ -12,8 +12,8 @@ CONFIG = ROOT / 'data/prism_config.json'
 RUBRIC = '''CaseList rubric_v2 evaluates ONLY frozen synthetic policy and evidence consistency, not real admissions validity.
 PASS if every college ID/category matches expected_categories, counts match canonical_counts, n equals their sum,
 and citation fields equal canonical_citations with quotation references resolving in exact_source_quotes.
-Sparse n<8 requires Needs review. Waitlisted counts remain waitlisted. Do not penalize fictional or repeated
-synthetic essays, observed count statements or provisional labels: they are disclosed demonstration fixtures.
+Sparse n<8 requires Needs review. Waitlisted counts remain waitlisted. The applicants and outcomes are authored scenarios, not historical admission evidence. College program facts
+have separate official sources. Category checks verify demonstration policy, not institutional selectivity.
 FAIL for changed categories/counts/citations, invented quotations, percentages predicting personal admission,
 explicit admission guarantees or claims that an activity caused admission. Quotations are verified exact source
 substrings locally; the table is the canonical reference. Prose must retain uncertainty and synthetic limitations.
@@ -42,13 +42,13 @@ def setup():
     context = ssl.create_default_context(cafile='/etc/ssl/cert.pem') if Path('/etc/ssl/cert.pem').exists() else True
     docs = request('/api/knowledge-base/documents?' + project_query())['documents']
     for file in sorted((ROOT / 'data/prism_kb').glob('*.md')):
-        name = 'CaseList_synthetic_v1_' + file.name
+        name = 'CaseList_synthetic_v2_reference_' + file.name
         existing = next((d for d in docs if d['name'] == name), None)
         if existing is None:
             with httpx.Client(verify=context, timeout=20) as client:
                 response = client.post(os.environ['PRISMTRACE_HOST'] + '/api/knowledge-base/documents',
                     headers={'X-PRISMtrace-Key': os.environ['PRISMTRACE_API_KEY']},
-                    data={'project_id': project, 'agent_id': 'caselist', 'description': 'Frozen synthetic applicant outcomes; synthetic_v1'},
+                    data={'project_id': project, 'agent_id': 'caselist', 'description': 'Frozen synthetic applicant outcomes; synthetic_v2'},
                     files={'file': (name, file.read_bytes(), 'text/markdown')})
                 if response.status_code not in (200, 201):
                     raise RuntimeError(f'KB upload HTTP {response.status_code}')

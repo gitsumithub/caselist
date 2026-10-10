@@ -55,7 +55,9 @@ def retrieve(student, college_id, dataset):
         seen.add(person["applicant_id"])
         selected.append({**person, **application, "similarity": score,
                          "gpa_difference": round(student["gpa"] - person["gpa"], 2),
-                         "rigor_difference": student["rigor"] - person["rigor"]})
+                         "rigor_difference": student["rigor"] - person["rigor"],
+                         "shared_tags": sorted(set(student["activity_tags"]) & set(person["activity_tags"])),
+                         "matching_method": "GPA proximity 50%, rigor proximity 30%, activity-tag overlap 20%; essay is reviewed separately, not ranked."})
     return sorted(selected, key=lambda x: (-x["similarity"], x["applicant_id"]))[:8]
 
 
