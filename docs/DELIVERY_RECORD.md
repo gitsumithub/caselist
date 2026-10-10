@@ -32,3 +32,5 @@ Correction retry passed all checks; source quoting was tightened to each college
 All 60 scenario display surnames are distinct. Display names do not enter model packets or policy matching. PRISM reference revision removes name labels and grounds stable application IDs, profiles and outcomes; saved-run KB receipts were refreshed against these documents.
 
 Added a visible student overview above results and verified that correcting rigor updates it immediately. Randomized first/surname pairings reproducibly for all 60 comparison profiles; verified that applicant evidence and outcome fields did not change. Updated saved-run display labels and captured the revised demonstration.
+
+Spec 1.5 audit: 16 tests passed; bounded malformed-chairman repair added and tested. Fresh live run 4d316fd9-c0c0-4a14-b348-3593f307bb0c passed Council, KB and attached Evaluator at 95/100. PRISM readback confirmed spec/build identity. Full requirement mapping and open platform-analysis/submission issues: docs/SPEC_TRACEABILITY.md.

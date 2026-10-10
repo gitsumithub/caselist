@@ -3564,7 +3564,7 @@
         "ai_explanation": {
           "college_id": "C02",
           "category": "Target",
-          "explanation": "Retrieved case emphasizes small reversible tests and explaining technical work without pretense; student essay parallels systematic sensor testing and making ideas understandable.",
+          "explanation": "Retrieved case emphasizes small reversible tests to explain technical work without pretense; student essay similarly describes sensor testing and making ideas understandable.",
           "application_id": "APP016",
           "outcome": "rejected",
           "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
@@ -3984,12 +3984,12 @@
         "ai_explanation": {
           "college_id": "C03",
           "category": "Likely",
-          "explanation": "Retrieved case demonstrates methodical testing and explaining technical work; student essay shows similar diagnostic approach to sensor testing and peer instruction.",
+          "explanation": "Retrieved case demonstrates methodical testing and explaining technical work; student essay parallels this diagnostic approach to sensor troubleshooting.",
           "application_id": "APP024",
           "outcome": "rejected",
           "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
           "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-          "limitation": "Rejected case contradicts Likely category; no causal link between essay experience and admission outcomes observed in retrieved data."
+          "limitation": "Rejected case contradicts Likely category; no causal link between essay experience and admission outcomes observed in data."
         },
         "computed_category": "Likely"
       },
@@ -4404,12 +4404,12 @@
         "ai_explanation": {
           "college_id": "C04",
           "category": "Likely",
-          "explanation": "Retrieved case emphasizes systematic testing and explaining technical work without pretense; student essay similarly describes sensor testing and making concepts understandable.",
+          "explanation": "Retrieved case emphasizes systematic testing and explaining technical work; student essay shows similar diagnostic and teaching practices during robot failure.",
           "application_id": "APP032",
           "outcome": "rejected",
           "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
           "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-          "limitation": "Rejected case provides no admission validation; templated essay fragments across cases indicate synthetic data limiting meaningful comparison."
+          "limitation": "Rejected case provides no admission validation; templated essay fragments across cases indicate synthetic data rather than meaningful comparison."
         },
         "computed_category": "Likely"
       },
@@ -4674,7 +4674,7 @@
         "ai_explanation": {
           "college_id": "C05",
           "category": "Needs review",
-          "explanation": "Retrieved case involves inventory tool and data entry error correction; student essay describes robotics sensor testing\u2014different technical domains with no clear essay experience parallel.",
+          "explanation": "Retrieved case involves inventory tool and data entry error correction; student essay describes robot sensor testing\u2014different technical domains with no shared essay experience.",
           "application_id": "APP036",
           "outcome": "rejected",
           "quote": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction hist",
@@ -5092,17 +5092,20 @@
         "ai_explanation": {
           "college_id": "C06",
           "category": "Needs review",
-          "explanation": "Retrieved case involves inventory tool error correction; student essay describes robotics sensor testing\u2014different technical domains with limited essay experience alignment.",
+          "explanation": "Retrieved case involves inventory tool error correction; student essay describes robot sensor testing\u2014distinct technical contexts with no aligned essay experience.",
           "application_id": "APP044",
           "outcome": "waitlisted",
           "quote": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction hist",
           "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-          "limitation": "Unresolved waitlist and domain mismatch prevent category stability; insufficient resolved cases for reliable essay experience comparison."
+          "limitation": "Unresolved waitlist and domain mismatch prevent category stability; insufficient resolved cases for meaningful essay experience comparison."
         },
         "computed_category": "Needs review"
       }
     ],
     "policy_version": "demo_v1",
+    "spec_version": "1.5",
+    "build_commit": "b857f9dd1fe7e79b9cfeb538e1be3040fd68af9b",
+    "working_tree_modified": false,
     "dataset_version": "synthetic_v2",
     "has_likely": true,
     "category_counts": {
@@ -5116,8 +5119,8 @@
       "evaluated": true,
       "flagged": false,
       "flags": [],
-      "latency_ms": 88,
-      "correlation_trace_id": "1dd9b30f-fdae-4621-b594-290ab546fb28"
+      "latency_ms": 86,
+      "correlation_trace_id": "f56538e3-4d9b-4041-99b0-9dd4fc089f3d"
     },
     "extraction": {
       "experiences": [
@@ -5145,7 +5148,7 @@
         }
       ]
     },
-    "extraction_id": "b7c696af-ade1-481f-8b4f-459b19e06a90",
+    "extraction_id": "01c83439-d97e-4358-a917-0cab67a4d60a",
     "council": {
       "version": "council_v1",
       "status": "passed",
@@ -5153,7 +5156,7 @@
         {
           "requested_model": "anthropic/claude-haiku-4-5",
           "actual_model": "anthropic/claude-haiku-4-5",
-          "trace_id": "5093c216-8200-4d04-becf-badcbb27dd05",
+          "trace_id": "6b2dbac9-a20c-49b5-b825-77fedd0af7ba",
           "proposal": {
             "colleges": [
               {
@@ -5224,7 +5227,7 @@
         {
           "requested_model": "openai/gpt-4o-mini",
           "actual_model": "openai/gpt-4o-mini",
-          "trace_id": "70f4ea98-d1d4-423e-99ad-e6ac72179ff6",
+          "trace_id": "071426a5-786f-4314-8f2f-eb51c2333830",
           "proposal": {
             "colleges": [
               {
@@ -5297,7 +5300,7 @@
         {
           "requested_model": "anthropic/claude-haiku-4-5",
           "actual_model": "anthropic/claude-haiku-4-5",
-          "trace_id": "6304b108-26de-4254-85cf-152f3c47adba",
+          "trace_id": "4aeafa66-b215-42ba-9cff-a837f2c72fc4",
           "ranking": [
             "A",
             "B"
@@ -5315,7 +5318,7 @@
         {
           "requested_model": "openai/gpt-4o-mini",
           "actual_model": "openai/gpt-4o-mini",
-          "trace_id": "71b328ba-c9f2-4f91-bc43-e29cec687b92",
+          "trace_id": "d9d410e0-9f44-4897-a00e-34ca293b514e",
           "ranking": [
             "A",
             "B"
@@ -5332,7 +5335,7 @@
       ],
       "chairman": {
         "actual_model": "anthropic/claude-haiku-4-5",
-        "trace_id": "7f0bb42f-8afd-4342-8603-3632b4ed540d"
+        "trace_id": "cdd1ecc9-e74b-492c-b5d4-5366c39c70a8"
       },
       "synthesis": {
         "colleges": [
@@ -5349,7 +5352,7 @@
           {
             "college_id": "C02",
             "category": "Target",
-            "explanation": "Retrieved case emphasizes small reversible tests and explaining technical work without pretense; student essay parallels systematic sensor testing and making ideas understandable.",
+            "explanation": "Retrieved case emphasizes small reversible tests to explain technical work without pretense; student essay similarly describes sensor testing and making ideas understandable.",
             "application_id": "APP016",
             "outcome": "rejected",
             "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
@@ -5359,27 +5362,27 @@
           {
             "college_id": "C03",
             "category": "Likely",
-            "explanation": "Retrieved case demonstrates methodical testing and explaining technical work; student essay shows similar diagnostic approach to sensor testing and peer instruction.",
+            "explanation": "Retrieved case demonstrates methodical testing and explaining technical work; student essay parallels this diagnostic approach to sensor troubleshooting.",
             "application_id": "APP024",
             "outcome": "rejected",
             "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
             "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-            "limitation": "Rejected case contradicts Likely category; no causal link between essay experience and admission outcomes observed in retrieved data."
+            "limitation": "Rejected case contradicts Likely category; no causal link between essay experience and admission outcomes observed in data."
           },
           {
             "college_id": "C04",
             "category": "Likely",
-            "explanation": "Retrieved case emphasizes systematic testing and explaining technical work without pretense; student essay similarly describes sensor testing and making concepts understandable.",
+            "explanation": "Retrieved case emphasizes systematic testing and explaining technical work; student essay shows similar diagnostic and teaching practices during robot failure.",
             "application_id": "APP032",
             "outcome": "rejected",
             "quote": "A donated laptop would not charge. I checked the cable before opening the case and wrote down each t",
             "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-            "limitation": "Rejected case provides no admission validation; templated essay fragments across cases indicate synthetic data limiting meaningful comparison."
+            "limitation": "Rejected case provides no admission validation; templated essay fragments across cases indicate synthetic data rather than meaningful comparison."
           },
           {
             "college_id": "C05",
             "category": "Needs review",
-            "explanation": "Retrieved case involves inventory tool and data entry error correction; student essay describes robotics sensor testing\u2014different technical domains with no clear essay experience parallel.",
+            "explanation": "Retrieved case involves inventory tool and data entry error correction; student essay describes robot sensor testing\u2014different technical domains with no shared essay experience.",
             "application_id": "APP036",
             "outcome": "rejected",
             "quote": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction hist",
@@ -5389,70 +5392,70 @@
           {
             "college_id": "C06",
             "category": "Needs review",
-            "explanation": "Retrieved case involves inventory tool error correction; student essay describes robotics sensor testing\u2014different technical domains with limited essay experience alignment.",
+            "explanation": "Retrieved case involves inventory tool error correction; student essay describes robot sensor testing\u2014distinct technical contexts with no aligned essay experience.",
             "application_id": "APP044",
             "outcome": "waitlisted",
             "quote": "Two volunteers entered the same delivery. I added a receipt identifier and a visible correction hist",
             "student_quote": "When our robot failed before the showcase, I helped the team test each sensor. Teaching a classmate",
-            "limitation": "Unresolved waitlist and domain mismatch prevent category stability; insufficient resolved cases for reliable essay experience comparison."
+            "limitation": "Unresolved waitlist and domain mismatch prevent category stability; insufficient resolved cases for meaningful essay experience comparison."
           }
         ],
-        "summary": "Retrieved cases across C01\u2013C04 emphasize systematic testing and explaining technical work; student essay parallels this in robotics context. C05\u2013C06 involve different technical domain (inventory) with no clear essay alignment. Synthetic data homogeneity, rejected/waitlisted outcomes, and absence of causal admission evidence limit comparative strength across all colleges."
+        "summary": "Retrieved cases C01\u2013C04 share templated language about systematic testing; C05\u2013C06 involve different technical domain. Student essay emphasizes sensor testing and peer instruction. Rejected/waitlisted outcomes and synthetic data homogeneity limit comparative strength; no causal admission evidence observed."
       },
       "validation_errors": [],
       "disclosure": "Agreement does not validate admissions predictions. Categories are assigned by code."
     },
     "evaluator": {
       "status": "passed",
-      "trace_id": "7eaaa399-8122-414d-ac85-8adafbc7ffaa",
+      "trace_id": "2aa67bad-e1da-4188-9c8e-d41252735d19",
       "task_id": "dbd973f6-b7a8-4ab2-a065-fe6c4805ca9d",
       "evaluator_id": "d6341c3a-ee17-4c7c-a6de-82288b2fdb57",
-      "result_id": "e8792834-d6c2-4895-8040-da2d19f52511",
+      "result_id": "01288e4f-f12d-4c8d-a6cc-a227516725b0",
       "label": "PASS",
       "score": 95.0,
-      "reason": "All six college IDs (C01\u2013C06) match expected_categories with correct designations (Reach, Target, Likely, Likely, Needs review, Needs review). Admitted, rejected, and waitlisted counts match canonical_counts exactly for all colleges: C01 (1/7/0), C02 (4/4/0), C03 (7/1/0), C04 (6/2/0), C05 (2/2/0), C06 (2/5/1). Calculated n values are correct: C01\u2013C04 and C06 show n=8; C05 shows n=4, qualifying as sparse and appropriately marked Needs review. Citation references and application IDs are present for each college. The output preserves synthetic scope disclaimer and contains no claims of guaranteed admission, unsupported probability predictions, or causal admission statements. Waitlist status in C06 is preserved and not conflated with rejection.",
+      "reason": "All six colleges match expected categories (C01-C06 correctly classified as Reach, Target, Likely, Likely, Needs review, Needs review). Admission/rejection/waitlist counts are identical to canonical_counts for all colleges. The n values correctly sum component counts (C01-C04, C06 = 8; C05 = 4). Citation references are properly structured with application IDs and outcomes matching canonical records. C05 and C06 are correctly flagged as 'Needs review' due to sparse evidence (n<8 for C05). The scope appropriately declares synthetic policy consistency evaluation without admissions validity claims. No invented quotations, guaranteed admission claims, or causal admission narratives are present in the output structure.",
       "rubric_version": "rubric_v2"
     },
     "live_sponsors_verified": true,
     "mode": "live",
-    "run_id": "1d03061e-ce1d-4c89-83f9-f16f2a214c05",
-    "session_id": "caselist-e1d8b089-ba4c-4251-9eb9-bb93f58cecbd",
+    "run_id": "4d316fd9-c0c0-4a14-b348-3593f307bb0c",
+    "session_id": "caselist-650d5487-8ea9-48c7-bd51-7946c4bfc6fb",
     "revision": 1,
     "input_hash": "188dd205731092b7df3daa0bd3723ad32fb0816abe423f119df744bc5c87c2a8",
     "trace_ids": [
       {
-        "id": "70f4ea98-d1d4-423e-99ad-e6ac72179ff6",
-        "trace_id": "86750a77-47f6-4322-bb72-dae5f8a99d70",
-        "purpose": "council_opinion",
-        "model": "openai/gpt-4o-mini"
-      },
-      {
-        "id": "5093c216-8200-4d04-becf-badcbb27dd05",
-        "trace_id": "4a3b1a96-0f62-4eab-94fd-c3dbb723845e",
+        "id": "6b2dbac9-a20c-49b5-b825-77fedd0af7ba",
+        "trace_id": "595cdaa8-6ee1-446f-83e1-fc9f87fb917e",
         "purpose": "council_opinion",
         "model": "anthropic/claude-haiku-4-5"
       },
       {
-        "id": "71b328ba-c9f2-4f91-bc43-e29cec687b92",
-        "trace_id": "e6b8dc75-e436-4fd7-a566-e222ed064a70",
+        "id": "071426a5-786f-4314-8f2f-eb51c2333830",
+        "trace_id": "216db05a-ad63-4a64-b99a-77c5fe746262",
+        "purpose": "council_opinion",
+        "model": "openai/gpt-4o-mini"
+      },
+      {
+        "id": "d9d410e0-9f44-4897-a00e-34ca293b514e",
+        "trace_id": "188cb57f-4323-487e-8008-30f397858142",
         "purpose": "council_review",
         "model": "openai/gpt-4o-mini"
       },
       {
-        "id": "6304b108-26de-4254-85cf-152f3c47adba",
-        "trace_id": "35e34374-d51a-4556-a6eb-603d21f8c2db",
+        "id": "4aeafa66-b215-42ba-9cff-a837f2c72fc4",
+        "trace_id": "5ebe0348-9a05-4673-a549-d61df402140a",
         "purpose": "council_review",
         "model": "anthropic/claude-haiku-4-5"
       },
       {
-        "id": "7f0bb42f-8afd-4342-8603-3632b4ed540d",
-        "trace_id": "ee251abe-e60c-4405-9e58-25b436a409ac",
+        "id": "cdd1ecc9-e74b-492c-b5d4-5366c39c70a8",
+        "trace_id": "a7ce570a-68f6-48f9-ae86-58372f4f6389",
         "purpose": "council_chairman",
         "model": "anthropic/claude-haiku-4-5"
       },
       {
-        "id": "7eaaa399-8122-414d-ac85-8adafbc7ffaa",
-        "trace_id": "796c349e-669d-46a6-a7c1-5b7d89b88775",
+        "id": "2aa67bad-e1da-4188-9c8e-d41252735d19",
+        "trace_id": "0a05fa91-18a5-49b6-a4db-a69e49f15ac3",
         "purpose": "classified_output",
         "model": "policy/demo_v1"
       }
