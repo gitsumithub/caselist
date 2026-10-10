@@ -2,6 +2,12 @@
 
 Status: blocked pending credentials and sponsor-confirmed interfaces. Local preview is not a completed hackathon submission.
 
+## Onboarding connection
+
+Prism's supplied onboarding screen identifies project `9542b15d-d78e-4109-a87b-0b19d1ef200a` and the backend `https://prism-api-prod.up.railway.app`. SDK 0.5.1 is installed in `.venv` and pinned in `requirements.txt`. Save the full onboarding key as `PRISMTRACE_API_KEY` in ignored `.env`, then run `.venv/bin/python integrations.py --prism-handshake`. This uses the exact supplied setup-doctor handshake and sends a synthetic setup trace. It does not prove a real model trace or any mandatory Guardrail, KB or Evaluator control.
+
+If the original brief is unavailable, select Codex in onboarding and rotate the setup key yourself. Keep the full key local; do not paste it into chat or commit it.
+
 Ask the Prism owner for one working example that uses **Nicrron as inference provider** and:
 
 1. Runs an input Guardrail before inference and exposes its actual decision.

@@ -67,7 +67,7 @@ def prism_trace(messages, reply, session_id):
         raise RuntimeError("Configure Prism project and ingest/read key in .env.")
     # Fixed official destination protects credentials from accidental host misconfiguration.
     host = os.getenv("PRISMTRACE_HOST", "https://prism.blockconvey.com").rstrip("/")
-    if host != "https://prism.blockconvey.com":
+    if host not in ("https://prism.blockconvey.com", "https://prism-api-prod.up.railway.app"):
         raise RuntimeError("Only the verified official Prism host is configured in this starter.")
     return _post(host + "/api/traces", {
         "trace_id": str(uuid4()), "project_id": project, "session_id": session_id,
@@ -82,12 +82,29 @@ def require_live_controls():
     raise RuntimeError("Live student processing is blocked until Prism Guardrail, Knowledge Base and Evaluator contracts are connected and tested. Local comparison is available.")
 
 
+def prism_handshake():
+    """Use the exact setup-doctor contract supplied by Prism onboarding."""
+    load_env()
+    key, project = os.getenv("PRISMTRACE_API_KEY"), os.getenv("PRISMTRACE_PROJECT_ID")
+    if not key or not project:
+        raise RuntimeError("Set PRISMTRACE_API_KEY and PRISMTRACE_PROJECT_ID in the local .env first.")
+    response = _post(
+        "https://prism-api-prod.up.railway.app/api/setup-doctor/handshake",
+        {"project_id": project, "send_test_trace": True},
+        {"X-PRISMtrace-Key": key}, 15)
+    # Do not display an echoed credential even if the server returns one.
+    return json.loads(json.dumps(response).replace(key, "[REDACTED]"))
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke", action="store_true", help="Send a harmless fixed connectivity request to Nicrron and trace it in Prism.")
+    parser.add_argument("--prism-handshake", action="store_true", help="Verify Prism onboarding credentials and send its synthetic setup trace.")
     args = parser.parse_args()
-    if args.smoke:
+    if args.prism_handshake:
+        print(json.dumps(prism_handshake(), indent=2))
+    elif args.smoke:
         messages = [{"role": "user", "content": "Reply with the single word connected."}]
         reply = nicrron_chat(messages)
         trace = prism_trace(messages, reply, "caselist-smoke-" + str(uuid4()))
