@@ -30,3 +30,5 @@ Replaced identical applicant prose with 60 unique essays and activity descriptio
 Correction retry passed all checks; source quoting was tightened to each college’s cited case after an initial failed source check. Both saved synthetic_v2 runs now have live_sponsors_verified=true. New-version injection was blocked before model inference. Negative classified-output control failed at 15/100.
 
 All 60 scenario display surnames are distinct. Display names do not enter model packets or policy matching. PRISM reference revision removes name labels and grounds stable application IDs, profiles and outcomes; saved-run KB receipts were refreshed against these documents.
+
+Added a visible student overview above results and verified that correcting rigor updates it immediately. Randomized first/surname pairings reproducibly for all 60 comparison profiles; verified that applicant evidence and outcome fields did not change. Updated saved-run display labels and captured the revised demonstration.

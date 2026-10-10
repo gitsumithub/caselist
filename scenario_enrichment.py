@@ -1,6 +1,16 @@
 """Authored scenario enrichment; outcomes remain explicit policy fixtures."""
 from pathlib import Path
 import json
+import random
+def scenario_names():
+    """Stable random pairings of fictional labels; never used in matching."""
+    first = ['Amelia', 'Noah', 'Olivia', 'Liam', 'Sophia', 'Elijah', 'Charlotte', 'James', 'Isabella', 'Lucas', 'Mia', 'Mason', 'Evelyn', 'Ethan', 'Harper', 'Aiden', 'Abigail', 'Henry', 'Emily', 'Jackson', 'Elizabeth', 'Sebastian', 'Avery', 'Jack', 'Sofia', 'Owen', 'Ella', 'Samuel', 'Madison', 'Matthew', 'Scarlett', 'Joseph', 'Victoria', 'Levi', 'Aria', 'David', 'Grace', 'Daniel', 'Chloe', 'Carter', 'Camila', 'Wyatt', 'Penelope', 'Jayden', 'Riley', 'Julian', 'Layla', 'Luke', 'Lillian', 'Gabriel', 'Nora', 'Isaac', 'Zoey', 'Anthony', 'Hannah', 'Dylan', 'Addison', 'Leo', 'Audrey', 'Caleb']
+    last = ['Rivera', 'Park', 'Bennett', 'Shah', 'Morgan', 'Ali', 'Chen', 'Patel', 'Thompson', 'Garcia', 'Williams', 'Nguyen', 'Anderson', 'Martinez', 'Wilson', 'Brown', 'Davis', 'Rodriguez', 'Lee', 'Walker', 'Hall', 'Allen', 'Young', 'Hernandez', 'King', 'Wright', 'Lopez', 'Hill', 'Scott', 'Green', 'Adams', 'Baker', 'Nelson', 'Carter', 'Mitchell', 'Perez', 'Roberts', 'Turner', 'Phillips', 'Campbell', 'Evans', 'Edwards', 'Collins', 'Stewart', 'Sanchez', 'Morris', 'Rogers', 'Reed', 'Cook', 'Bell', 'Murphy', 'Bailey', 'Cooper', 'Richardson', 'Cox', 'Howard', 'Ward', 'Torres', 'Peterson', 'Gray']
+    rng = random.Random(20261010)
+    rng.shuffle(first)
+    rng.shuffle(last)
+    return [a + ' ' + b for a, b in zip(first, last)]
+
 def enrich():
     r=Path(__file__).parent; d=json.loads((r/'data/dataset.json').read_text())
     projects=[
@@ -12,12 +22,11 @@ def enrich():
     ('water monitoring project','Logged readings from a school water sensor and taught younger robotics members to plot measurements.','One dramatic spike disappeared when we cleaned a loose connector. I kept the original reading beside the corrected one.','I learned to question attractive conclusions when the measurement process was uncertain.'),
     ('peer tutoring scheduler','Built a peer tutoring signup tool and helped the robotics team organize practice sessions.','My first schedule assigned a tutor during their own class. I interviewed users before rewriting the time rules.','Listening to the people affected by my code changed what I considered a successful solution.'),
     ('repair cafe diagnostic guide','Volunteered at a repair cafe, prototyped a robotics diagnostic guide and tutored introductory programming.','A donated laptop would not charge. I checked the cable before opening the case and wrote down each test.','Small, reversible tests helped me explain technical work without pretending I already knew the answer.')]
-    first=['Jordan','Maya','Leo','Samira','Ethan','Nina','Owen','Priya','Mateo','Zoe']
-    last=['Rivera','Park','Bennett','Shah','Morgan','Ali']
+    names = scenario_names()
     settings=['after school','at a Saturday workshop','during our spring showcase','with a new club member','before a community open house','during a summer volunteer session','in a lunchtime study group','while preparing a handover to next year’s team']
     for i,p in enumerate(d['applicants']):
         title,activity,incident,reflection=projects[i%8]
-        p['name']=first[i%10]+' '+['Rivera', 'Park', 'Bennett', 'Shah', 'Morgan', 'Ali', 'Chen', 'Patel', 'Thompson', 'Garcia', 'Williams', 'Nguyen', 'Anderson', 'Martinez', 'Wilson', 'Brown', 'Davis', 'Rodriguez', 'Lee', 'Walker', 'Hall', 'Allen', 'Young', 'Hernandez', 'King', 'Wright', 'Lopez', 'Hill', 'Scott', 'Green', 'Adams', 'Baker', 'Nelson', 'Carter', 'Mitchell', 'Perez', 'Roberts', 'Turner', 'Phillips', 'Campbell', 'Evans', 'Edwards', 'Collins', 'Stewart', 'Sanchez', 'Morris', 'Rogers', 'Reed', 'Cook', 'Bell', 'Murphy', 'Bailey', 'Cooper', 'Richardson', 'Cox', 'Howard', 'Ward', 'Torres', 'Peterson', 'Gray'][i]
+        p['name']=names[i]
         p['synthetic']=True
         p['project']=title
         p['activities']=activity+f" Worked {2+i%5} hours per week for {12+i%17} weeks; balanced the project with "+['a weekend grocery shift.','school orchestra rehearsals.','caring for a younger sibling.','cross-country practice.','debate club meetings.','a school newspaper role.'][i%6]

@@ -408,3 +408,7 @@ The user confirmed no organizer applicant dataset exists and authorized created 
 The UI shows an admitted scenario beside a rejected or waitlisted scenario, academic differences, shared tags and coursework. Retrieval weights are visible; essay meaning is reviewed separately by Council. Names do not enter matching. Official university program facts have separate links and verification dates. PRISM must query new versioned documents; old recorded passes cannot certify this release.
 
 Original track requirement: reasoning grounded in real outcomes. Without permissioned historical outcomes, this prototype demonstrates the workflow using synthetic outcomes and does not satisfy empirical validation of that requirement. Obtaining and validating a permissioned outcome dataset remains the production step.
+
+### Visible student context
+
+A Student being reviewed card sits above the results on initial load, extraction and comparison views. It shows name, unweighted GPA, readable rigor level, major, activities, full draft essay and confirmed matching tags. Editing the profile updates the card immediately while invalidating stale results. Synthetic comparison students use independently shuffled first-name and surname lists with a fixed random seed; display labels never affect matching, quotations or outcome classifications.
