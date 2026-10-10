@@ -1,0 +1,19 @@
+{
+  "policy_version": "demo_v1",
+  "baseline": [
+    "Reach",
+    "Target",
+    "Needs review",
+    "Likely",
+    "Needs review",
+    "Needs review"
+  ],
+  "rigor_2": [
+    "Reach",
+    "Target",
+    "Likely",
+    "Likely",
+    "Needs review",
+    "Needs review"
+  ]
+}

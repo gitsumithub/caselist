@@ -1,0 +1,25 @@
+CaseList — three-minute demonstration
+
+0:00–0:20
+CaseList helps a counselor build a provisional college list and question the evidence behind it. All students and colleges here are fictional. These categories are not validated admission predictions.
+
+0:20–0:45
+Load Avery: GPA 3.7, some advanced courses and Computer Science. Extract with Nicrron. PRISM checks the input before any model request. GPT-4o mini extracts only explicitly stated experiences with exact source quotations. Review those quotes and confirm academic facts.
+
+0:45–1:15
+Build with Council. Claude Haiku 4.5 and GPT-4o mini give independent opinions through Nicrron. Each reviews anonymous proposals; the chairman synthesizes explanations. Agreement is not validation. Code checks the sources and preserves the deterministic policy categories.
+
+1:15–1:45
+Inspect Cedar Valley's admitted and rejected records. Similar essay experiences coexist with different outcomes; they do not explain what caused admission. Open the Knowledge Base evidence: the outcome claim is linked to an actual PRISM document and retrieved application block. Summit has only four cases, so it stays Needs review. Maple Coast has an unresolved waitlist.
+
+1:45–2:15
+Change rigor from 1 to 2. Previous results disappear as stale. Rebuild from confirmed facts. Harbor changes from Needs review to provisional Likely after its academic median checks pass. This change is a demonstration-policy result, not a real admission forecast.
+
+2:15–2:45
+Inspect run evidence. Show actual model stage trace IDs, the Guardrail decision, KB document/chunk IDs and the attached classified-output Evaluator. Correct six-college output passed at 95/100. Deliberately calling the four-case college Likely fails. Run the injection demonstration: instructions to hide evidence and make every college Likely are blocked before inference.
+
+2:45–3:00
+The product is an inspectable comparison with counselor correction, source validation and live sponsor controls. Eleven automated tests cover policy, citations, sparse data, cancellation and failure handling. Synthetic success does not establish admissions validity; representative data and counselor evaluation are the next milestone.
+
+Recording notes
+Record the app and evidence panels. Never display .env or key screens. Each live run may take up to 90 seconds; edit wait time visibly. Any prepared playback is labeled Recorded run and does not count as a fresh check. Verify the public video link and repository access before final Devpost submission.

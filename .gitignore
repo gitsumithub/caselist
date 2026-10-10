@@ -4,3 +4,9 @@ __pycache__/
 *.pyc
 .DS_Store
 runs/
+
+docs/demo/*.mp4
+docs/demo/*.aiff
+docs/demo/concat.txt
+docs/demo/narration-*.txt
+docs/demo/label-*.txt

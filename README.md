@@ -1,34 +1,27 @@
-# CaseList local starter
+# CaseList
 
-Open `caselist.code-workspace` in VS Code. Read `SPEC.md` first.
+A counselor workspace using synthetic applicant records, deterministic provisional categories, a two-model Nicrron LLM Council, and live PRISM controls. Read [SPEC.md](SPEC.md) for scope and acceptance requirements.
 
-Run from the integrated terminal (Python 3.10+; no packages required):
+Run locally:
 
 ```sh
-python3 server.py
+python3 -m venv .venv
+.venv/bin/pip install 'prismtrace-sdk>=0.5.1' httpx
+# Copy .env.example to .env and configure your existing credentials.
+.venv/bin/python setup_prism.py
+.venv/bin/python server.py
 ```
 
-Open http://127.0.0.1:8765. Load Avery, build the comparison, inspect the evidence, then change rigor from 1 to 2 and rebuild. Run tests with `python3 -m unittest discover -s tests -v`.
+Open http://127.0.0.1:8765. Load sample, extract experiences, review exact quotations, and confirm facts to build with Council. Change rigor from 1 to 2 and rebuild to inspect the correction. Local comparison remains available separately.
 
-## Current scope
+The Council calls `anthropic/claude-haiku-4-5` and `openai/gpt-4o-mini` through Nicrron. Independent opinions receive anonymous peer review; Haiku synthesizes explanations. This implementation is inspired by Karpathy’s LLM Council. Categories are assigned by `core.py`, never by model voting. Exact citations are checked against canonical records.
 
-Working local comparison, deterministic provisional categories, exact source records, editable profile, stale-result invalidation and a correction summary. All records and colleges are fictional. Manual profile entry is explicit; this starter does not claim live AI extraction or sponsor verification.
+PRISM evaluates input before inference, grounds outcome claims using six uploaded reference documents, captures model stages, and evaluates the classified output. Missing, failed or timed-out checks leave categories under review. Each run is bounded to 90 seconds and can be cancelled. Credentials stay in ignored `.env`; raw synthetic run evidence stays in ignored `runs/`.
 
-Nicrron connectivity has passed a harmless live request; see `docs/NICRRON_CONNECTIVITY.json`. Live extraction/explanation and Prism are **not yet verified**. Put credentials in a local `.env` using `.env.example`. Never paste keys into chat or commit them. Get the three missing Prism control examples from the sponsor; see `docs/PRISM_SETUP.md`. The app deliberately blocks live student processing until those controls are implemented. `python3 integrations.py --smoke` is only a harmless model/trace connectivity test and cannot pass the full release gate.
+```sh
+python3 -m unittest discover -s tests -v
+```
 
-## Recorded changes from the initial plan
+All colleges and records are fictional. Categories are provisional demonstration labels, not validated admission predictions. Live check status applies only to its recorded run. See `docs/DELIVERY_RECORD.md` for verified results and remaining submission tasks.
 
-- Package downloads failed in the current build session. Python's built-in server and a plain HTML interface replace Streamlit. The project runs without dependencies.
-- Frozen synthetic_v1 contains 60 applicants, **140** applications and six colleges. This replaces the approximate 180-record planning target while preserving all six expected demo cases.
-- Sponsor access is unresolved. Local work is a development preview; the hackathon submission is not complete.
-
-## Files
-
-- `SPEC.md`: product, controls, tests, judging and all eight submission requirements.
-- `core.py`: eligibility, similarity, categories and exact claim validation.
-- `data/`: synthetic records and upload-ready Prism reference documents.
-- `server.py`, `static/index.html`: local app.
-- `integrations.py`: verified Nicrron request and Prism trace contracts; explicit pending controls.
-- `docs/PRISM_SETUP.md`: sponsor questions and acceptance examples.
-
-No GitHub project, deployment, video or Devpost submission has been created. This repository is local.
+The three-minute narrated screenshot walkthrough is `docs/demo/CaseList-demo.mp4` locally (ignored by Git). To rebuild after updating captured screenshots, install `imageio-ffmpeg` and run `.venv/bin/python scripts/build_demo.py` on macOS. The live rehearsal script is `docs/DEMO_SCRIPT.txt`.

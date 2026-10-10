@@ -24,13 +24,11 @@ def load_env():
 
 def readiness():
     load_env()
-    return [
-        {"name": "Nicrron inference", "status": "Configured, untested" if os.getenv("NICRRON_API_KEY") and os.getenv("NICRRON_MODEL") else "Needs key and model", "detail": "Extraction and explanation must use actual Nicrron responses."},
-        {"name": "Prism traces", "status": "Configured, untested" if os.getenv("PRISMTRACE_API_KEY") and os.getenv("PRISMTRACE_PROJECT_ID") else "Needs key and project", "detail": "Verified HTTP contract implemented; live delivery has not been tested."},
-        {"name": "Input Guardrail", "status": "Blocked", "detail": "Need sponsor-confirmed pre-inference check compatible with Nicrron."},
-        {"name": "Knowledge Base", "status": "Blocked", "detail": "Upload-ready synthetic references exist. Actual upload and query contract need confirmation."},
-        {"name": "Output Evaluator", "status": "Blocked", "detail": "Rubric is in docs/PRISM_SETUP.md. Attachment and verdict readback need confirmation."},
-    ]
+    configured = bool(os.getenv('PRISMTRACE_API_KEY') and os.getenv('NICRRON_API_KEY'))
+    return [{'name': name, 'status': 'Configured; verified per run' if configured else 'Needs credentials',
+        'detail': 'Inspect this run’s evidence panel for actual checks and verdicts.'}
+        for name in ('Nicrron Council', 'Prism traces', 'Input Guardrail', 'Knowledge Base', 'Output Evaluator')]
+
 
 
 def _post(url, payload, headers, timeout):
@@ -46,13 +44,16 @@ def _post(url, payload, headers, timeout):
         return json.load(response)
 
 
-def nicrron_chat(messages):
+def nicrron_chat(messages, model=None, timeout=25, json_output=False):
     load_env()
-    key, model = os.getenv("NICRRON_API_KEY"), os.getenv("NICRRON_MODEL")
+    key, model = os.getenv("NICRRON_API_KEY"), model or os.getenv("NICRRON_MODEL")
     if not key or not model:
         raise RuntimeError("Configure NICRRON_API_KEY and an accessible NICRRON_MODEL in .env.")
     started = time.monotonic()
-    response = _post("https://api.nicrron.ai/v1/chat/completions", {"model": model, "messages": messages}, {"Authorization": f"Bearer {key}"}, 25)
+    payload = {"model": model, "messages": messages, "max_tokens": 2000, "temperature": 0}
+    if json_output:
+        payload['response_format'] = {'type': 'json_object'}
+    response = _post("https://api.nicrron.ai/v1/chat/completions", payload, {"Authorization": f"Bearer {key}"}, timeout)
     choice = response.get("choices", [{}])[0]
     content = choice.get("message", {}).get("content")
     if choice.get("finish_reason") != "stop" or not isinstance(content, str) or not content.strip():
@@ -75,11 +76,6 @@ def prism_trace(messages, reply, session_id):
         "model": reply["model"], "input_messages": messages, "output_message": reply["content"],
         "latency_ms": reply["latency_ms"], "metadata": {"purpose": "connectivity_smoke_test", "not_full_release_gate": True}
     }, {"X-PRISMtrace-Key": key}, 5)
-
-
-def require_live_controls():
-    # Intentionally no fake successful control result or guessed vendor endpoints.
-    raise RuntimeError("Live student processing is blocked until Prism Guardrail, Knowledge Base and Evaluator contracts are connected and tested. Local comparison is available.")
 
 
 def prism_handshake():

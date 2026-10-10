@@ -1,0 +1,27 @@
+CaseList
+A counselor workspace comparing synthetic applicant evidence with Nicrron LLM Council review and PRISM verification.
+
+Problem and inspiration
+Counselors need to explain why a college belongs on a student's list. A plausible model answer is insufficient when source records are sparse or contradictory. CaseList makes the comparison evidence inspectable and editable.
+
+What it does
+Confirm a fictional student's academic facts, extract exact essay experiences with Nicrron, review quotations, and build a six-college provisional list. Compare admitted and rejected records, inspect sparse-data and waitlist uncertainty, and correct course rigor to recompute the result.
+
+How we built it
+Python with a lightweight local server and HTML/JavaScript frontend. Frozen synthetic_v1 contains 60 applicants, 140 applications and six fictional colleges. Deterministic demo_v1 policy performs eligibility, matching and category assignment. Nicrron routes Claude Haiku 4.5 and GPT-4o mini through independent opinions, anonymous peer reviews and chairman synthesis inspired by Karpathy's LLM Council. Code validates exact citations and preserves policy categories. PRISM supplies pre-inference Guardrail evaluation, Knowledge Base outcome references, model traces and a classified-output Evaluator.
+
+Challenges and learning
+Model agreement can still contain incorrect citations and unsupported interpretation. We preserve disagreements and validate the final source references. PRISM judge context is bounded, so the evaluation payload uses shared quotation references rather than repeating every retrieved essay. Failure or timeout keeps results under review. Synthetic correctness does not establish real admissions validity.
+
+What's next
+Validate with consented, representative records and professional counselors; measure errors and uncertainty before expanding beyond the current fictional Computer Science demonstration. Real admissions recommendations and personal probability estimates are outside this release.
+
+Built with
+Python, JavaScript, HTML, CSS, Nicrron, PRISM, Claude Haiku, GPT-4o mini
+
+Repository
+https://github.com/gitsumithub/caselist
+
+Demo
+Local app: http://127.0.0.1:8765 (requires running locally).
+Public video URL and judge repository access must be confirmed before final submission.

@@ -2,7 +2,7 @@
 
 CaseList generates a provisional reach / target / likely college list from a student’s grades, activities and draft essay, supported by inspectable past applicant records. A counselor can examine conflicting outcomes, correct a profile fact and regenerate the list.
 
-Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.2, corrected against the event Resources and Rules. Build budget: 120 minutes from authorized implementation start, including verification and submission preparation. Local implementation is now authorized in the user's VS Code workspace. Live integration checks have not started; sponsor readiness remains unresolved until the checks below pass.
+Track: NERD APPLY, The Counselor Copilot. Event: Get Hired Hack at Columbia Startup Lab, October 10, 2026. Specification version: 1.3. On October 10 the user explicitly authorized adding LLM Council through Nicrron and completing the live app and demo. Version 1.2 remains preserved in Git history. The live Council journey and sponsor control checks have passed on recorded synthetic runs; see docs/DELIVERY_RECORD.md. Public video and judge access remain submission requirements.
 
 All student histories and outcomes in this prototype are synthetic, as instructed by the organizers. The prototype demonstrates traceable behavior against those records; it does not validate admissions predictions.
 
@@ -139,7 +139,17 @@ Visible disclosure: “Synthetic demonstration data. Categories are provisional 
 
 ## Agent and application responsibilities
 
-Implement one bounded workflow: guard input, extract profile, review facts, retrieve cases, classify, query Knowledge Base, explain, validate, evaluate and return. Use explicit application functions. No multi-agent framework is required. The exact Prism interfaces remain unresolved until sponsor examples and live tests establish them.
+Implement one bounded workflow: guard input, extract profile, review facts, retrieve cases, classify, query Knowledge Base, Council explanation/review/synthesis, validate, evaluate and return. Use explicit application functions. Council orchestration is now authorized; a separate agent framework is unnecessary. Use actual Prism interfaces verified against its live OpenAPI contract or installed SDK.
+
+### LLM Council amendment, version council_v1
+
+Implement the three-stage pattern inspired by https://github.com/karpathy/llm-council as native CaseList functions rather than replacing the app with the upstream chat UI. Two explicitly named, live-tested models are council members: `anthropic/claude-haiku-4-5` and `openai/gpt-4o-mini`, both called only through `https://api.nicrron.ai/v1`. Independent evidence explanations run concurrently. In stage two, the same members review and rank anonymously labeled proposals against the canonical packet. In stage three, a chairman synthesizes an explanation; preserve disagreements, limitations and source citations. Record model identities after anonymized review and show opinions, rankings, synthesis and actual trace IDs in an inspectable Council view.
+
+The Council must not assign or override categories, create admissions probabilities, invent source facts, or count agreement as predictive validation. Application code computes categories and exact counts. Validate every final cited application/outcome/quote against the selected canonical records and every student quotation against the confirmed profile. If a required member or review fails, mark the Council incomplete and retain verified deterministic evidence instead of claiming consensus. One schema-repair attempt may be used within the overall deadline; preserve failed responses.
+
+Nicrron extracts experiences and interests with exact supporting quotations; academic fields and curriculum/cycle/round remain counselor-confirmed. Human review is explicit before list generation. The complete automated workflow retains the 90-second budget, excluding human review. Council calls use bounded per-call timeouts and a verified 2,000-token cap. No calls occur on keystrokes. Record council_v1, prompt and configured/actual models with each run. Session and revision IDs connect extraction, Council and classified-output checks.
+
+Prism's verified `POST /api/guardrails/evaluate` can run before direct Nicrron inference: require `evaluated: true` and honor `blocked: true`. An unavailable/no-verdict result fails closed. Keep the active CaseList custom-regex input rule and general injection rule visible; these are real Prism checks, not local keyword substitutes. Record their coverage limitations. KB upload/search uses the verified SDK contract; validate document ID, dataset version and the exact application block. Attach rubric_v2 to classified `policy/demo_v1` traces through a continuous evaluation task and read its per-trace score/verdict before acceptance. Pending or failed scores produce review, not a passed state.
 
 | Responsibility | Owner |
 | --- | --- |
@@ -223,11 +233,11 @@ If Nicrron fails before extraction, preserve input and show retry. If the input 
 
 Default stack: Python, Python standard-library HTTP server with a plain HTML interface, OpenAI-compatible client, Pydantic, local JSON fixtures and pytest for core checks, plus sponsor-verified Prism interfaces. The event recommends prismtrace-sdk>=0.5.1; pin the version that passes the smoke test. Use explicit submit buttons, session state, input hash, profile revision and run ID. No custom database or vector infrastructure is required; Prism's Knowledge Base is mandatory.
 
-The sponsor guide specifies Nicrron's OpenAI-compatible endpoint, https://api.nicrron.ai/v1. Use NICRRON_API_KEY and an accessible model verified in the account; do not treat illustrative model IDs in docs as proof of availability. Two main calls per full run perform extraction and batched explanations. Test structured-output support and record the actual model. The guide offers COLUMBIA26 for $250 credit plus the standard $10 signup credit, shared across API/Builder/Code. Existing-account balances must be checked rather than assumed. Arena is optional.
+The sponsor guide specifies Nicrron's OpenAI-compatible endpoint, https://api.nicrron.ai/v1. Use NICRRON_API_KEY and an accessible model verified in the account; do not treat illustrative model IDs in docs as proof of availability. The live journey uses one extraction call, two independent Council opinions, two anonymous reviews and one chairman call; extraction/chairman may each have one schema repair. Test structured-output support and record the actual model. The guide offers COLUMBIA26 for $250 credit plus the standard $10 signup credit, shared across API/Builder/Code. Existing-account balances must be checked rather than assumed. Arena is optional.
 
 Prism integration has four required parts: input Guardrail, output Evaluator, Knowledge Base grounding and trace visibility. The event instructions specify one organization/workspace per team, project named after the team and agent_name on every SDK call. Use a custom key with ingest/read access, or the onboarding key described by the event; confirm any additional operation scopes with Prism. The event coupon PROOFOFWORK offers Builder access, 200 credits and five seats for 30 days. No account configuration is assumed completed.
 
-The public [Prism docs](https://blockconvey.com/docs) describe HTTP tracing and proxy enforcement, but the exact Nicrron-compatible prevention path and KB/Evaluator operations are not yet established. Trace ingestion is not a replacement for those controls. Obtain a working sponsor snippet for each required operation, including result retrieval, error shape and latency. Do not invent SDK methods or route inference away from Nicrron merely to make tracing work.
+The public [Prism docs](https://blockconvey.com/docs) describe HTTP tracing and proxy enforcement. Authenticated service OpenAPI and the SDK established the direct pre-inference Guardrail and KB/Evaluator operations; verified contracts are recorded in docs/PRISM_SETUP.md. Trace ingestion is not a replacement for those controls. Maintain the exercised contract for each required operation, including result retrieval, error shape and latency. Do not invent SDK methods or route inference away from Nicrron merely to make tracing work.
 
 Proposed input policy: block an essay instruction that asks the system to ignore evidence or assign “Likely” universally; allow an ordinary essay. Apply the verified result before inference. If the available integration only flags after the call, disclose that limitation and resolve the prevention path with Prism before implementing this specification.
 
@@ -247,9 +257,9 @@ First integration proof is the complete minute-20 sponsor journey, not merely an
 
 - Both: whether Prism's proxy supports Nicrron upstream, or what supported alternative enforces the input check while retaining Nicrron inference.
 
-These are unresolved implementation dependencies. This specification defines the intended behavior; it does not claim those API contracts or tests are already verified.
+These preflight dependencies were resolved for the current workspace; the delivery record distinguishes actual live proofs from release requirements still pending.
 
-Use a 25-second timeout per model attempt, at most one transient retry and one schema-repair attempt per logical model call. Bound the complete automated run to 90 seconds, including Guardrail, KB and Evaluator checks; human review time is excluded. If a sponsor check is asynchronous, display pending and use a supported bounded polling/readback path. Do not assume evaluation is immediate; Cancel and preserve the input when the deadline expires. Budget up to 5 seconds for each Prism ingest attempt and retry once with the same trace_id. These are implementation limits, not promised response times. Cap input at 12,000 characters. Send only structured comparison facts and up to two relevant source excerpts of at most 250 characters per retrieved applicant; never include full historical essays. Start with a 2,000-token response cap and verify it on the chosen model, including any reasoning-token accounting. A response that stops because of the cap is incomplete and must not be accepted. Configure a tested response cap using the selected model’s verified supported parameter. Measure actual latency.
+Use a 25-second timeout per model attempt, at most one transient retry and one schema-repair attempt per logical model call. Bound the complete automated run to 90 seconds, including Guardrail, KB and Evaluator checks; human review time is excluded. If a sponsor check is asynchronous, display pending and use a supported bounded polling/readback path. Do not assume evaluation is immediate; Cancel and preserve the input when the deadline expires. Budget up to 5 seconds for each Prism ingest attempt. This release marks an ingest failure incomplete without automatically retrying; an explicit retry starts a new run. These are implementation limits, not promised response times. Cap input at 12,000 characters. Send only structured comparison facts and up to two relevant source excerpts of at most 250 characters per retrieved applicant; never include full historical essays. Start with a 2,000-token response cap and verify it on the chosen model, including any reasoning-token accounting. A response that stops because of the cap is incomplete and must not be accepted. Configure a tested response cap using the selected model’s verified supported parameter. Measure actual latency.
 
 ## Acceptance checks
 
@@ -296,7 +306,7 @@ Do not spend build time on unsupported claims of uniqueness, model leaderboards 
 
 If delayed, cut styling, Arena comparison, advising-note export and extra review controls. Preserve list generation, source evidence, uncertainty, one correction and every mandatory sponsor capability. The two-hour target depends on readily available sponsor APIs, working credentials and prompt help; it cannot be guaranteed before preflight. Record actual start, minute-20 checkpoint and finish target, keeping preparation and authorized submission before 4:30 PM ET. Keep the final 25 minutes for delivery. An unresolved mandatory integration is reported as blocked, never simulated.
 
-Excluded: accounts, PDF/OCR ingestion, payments, web crawling, real admissions predictions, essay grading, financial-aid modeling, an autonomous scenario explorer, model training, vector databases and multi-agent orchestration.
+Excluded: accounts, PDF/OCR ingestion, payments, web crawling, real admissions predictions, essay grading, financial-aid modeling, an autonomous scenario explorer, model training and custom vector databases. Council explanation review is the only newly authorized model orchestration.
 
 ## Demo and submission
 
@@ -374,6 +384,19 @@ Rerun core checks when the policy, fixtures, prompt, model or integration contra
 
 
 
-## Local handoff status October 10 2026
+## Archived initial local handoff status October 10 2026
 
 The user requested an immediate VS Code handoff around 12:23 PM ET. The local starter is implemented and six core tests pass. Package installation was blocked, so the interface uses no third-party dependencies. Sponsor credentials are absent and all live integration gates remain pending. The application labels its current behavior as local comparison preview. This local version 1.2 supersedes the Page version 1.1 for these implementation details. Start with README.md; the remaining integration contracts are recorded in docs/PRISM_SETUP.md. No submission, video or public repository exists yet.
+
+
+## Council release verification October 10 2026
+
+The implemented council_v1 is inspired by Karpathy’s three-stage Council; it is not an installation of the original OpenRouter app. All inference goes through Nicrron. Two independent opinions, two anonymous reviews, a Haiku chairman and at most one repair are recorded. Extraction is separately reviewed by the counselor. Code controls categories and validates exact application/outcome/essay references. Chairman prose is restricted to quoted essay experiences; academic policy reasons remain separate.
+
+PRISM input evaluation runs before inference and fails closed. The default injection detector missed the required attack example, so an additional actual PRISM custom_regex block rule covers the demonstrated evidence-override phrases. This is narrow demonstrated coverage, not a general proof against prompt injection. Six synthetic reference documents were uploaded and their returned application blocks verified.
+
+The attached Evaluator checks the compact classified output: all six IDs, category/count consistency, sparse-data abstention, waitlists and canonical citation references. The full essay prose is source-validated locally and reviewed by the Council; it is not included in the bounded classified-output evaluator payload. Shared quotation references prevent PRISM context truncation. The evaluator establishes fixture consistency only, never real admissions validity.
+
+Verified baseline: Reach, Target, Needs review, Likely, Needs review, Needs review. Verified rigor-2 correction: Harbor becomes Likely. Positive classified output PASS 95; wrong four-case Likely output FAIL 15; injected instructions blocked before Nicrron. Eleven tests cover deterministic policy and key failure controls. Each run has session/revision/input hash and model-stage trace IDs. A recorded playback is explicitly labeled historical and does not perform fresh checks.
+
+The app runs locally on 127.0.0.1:8765. The CaseList Devpost project overview and story are saved as a draft. This release does not claim public hosting, a submitted Devpost entry, or confirmed judge access to the private repository/video.

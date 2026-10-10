@@ -1,6 +1,6 @@
 # CaseList local project context
 
-Read `SPEC.md` (version 1.2), then `README.md`. The specification is the authoritative product and acceptance contract; this file summarizes the local handoff.
+Read `SPEC.md` (version 1.3), then `README.md`. The specification is the authoritative product and acceptance contract; this file summarizes the local handoff.
 
 ## Product and demo
 
@@ -11,12 +11,12 @@ The frozen `synthetic_v1` dataset contains 60 applicants, 140 applications and s
 ## Implementation map
 
 - `core.py`: profile validation, eligibility, similarity ranking, category policy and exact structured claim checks.
-- `server.py`: localhost HTTP server, state and comparison endpoints, explicit blocking of unsupported live processing.
+- `server.py`: localhost HTTP server, state, comparison, live jobs, cancellation and recorded playback endpoints.
 - `static/index.html`: profile entry, comparison, evidence inspection and correction workflow.
 - `data/`: frozen fixtures, sample and prepared Prism reference documents.
-- `integrations.py`: connectivity helpers and readiness reporting; mandatory live controls are unfinished.
+- `integrations.py`: Nicrron calls, connectivity helpers and configuration reporting.
 - `tests/test_core.py`: six tests for canonical/corrected results, input limits, outcome-independent retrieval, deduplication, unseen inputs and fabricated claims.
-- `docs/PRISM_SETUP.md`: sponsor interface questions and required positive/negative examples.
+- `docs/PRISM_SETUP.md`: verified sponsor contracts and positive/negative controls.
 
 ## Local commands
 
@@ -24,8 +24,10 @@ Open `caselist.code-workspace` in VS Code. Run `python3 server.py` and visit htt
 
 Keep credentials in ignored `.env`, using `.env.example` for variable names. Never commit credentials or real student records.
 
-## Remaining dependencies
+## Remaining submission dependencies
 
-Live Nicrron extraction/explanations and Prism Guardrail, Knowledge Base, Evaluator and trace verification remain pending. Obtain sponsor-supported interfaces before implementing mandatory controls; local comparison and connectivity tests do not satisfy the live release gate. Preserve actual results and visibly report failed or pending checks.
+The video is built locally. Loom upload awaits sign-in. Judge access to the private repository and final Devpost submission remain outstanding. Public submission requires subsequent user authorization under the spec.
 
-The spec also requires a compact delivery record, clean-start verification, demo video, accessible GitHub repository and all eight Devpost fields. This setup creates a local repository only. Public submission requires subsequent user authorization under the spec.
+## Live Council release
+
+Nicrron extraction and two-model Council are implemented in live.py/council.py. PRISM Guardrail, Knowledge Base and classified-output Evaluator have verified recorded controls. Read docs/DELIVERY_RECORD.md for IDs and limits. Recorded demonstration is labeled historical and can be opened in the app. docs/demo/CaseList-demo.mp4 is a three-minute narrated screenshot walkthrough; docs/DEMO_SCRIPT.txt supports a live rehearsal. Devpost overview and story are saved; required video link, private repository judge access and final submission remain pending.
